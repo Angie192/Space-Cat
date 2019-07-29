@@ -8,6 +8,7 @@ public class Key implements KeyListener {
     static int tempKeyhandler = 0;
 
     public void keyTyped(KeyEvent e) {
+        // TODO logausgabe oder kommentar warum es leer ist
     }
 
     public void keyPressed(KeyEvent e) {
@@ -30,7 +31,7 @@ public class Key implements KeyListener {
             Var.down = true;
             Var.donot = false;
         }
-
+        // TODO simpler
         if (Var.inHauptmeü == false) {
 
             if (tempKeyhandler == 0) {

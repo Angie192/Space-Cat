@@ -7,6 +7,7 @@ public class Aktualisierung {
 
     Timer Aktualisirung;
 
+    // TODO kein static
     static int tempAktualisirung = 0;
 
     public Aktualisierung() {
@@ -16,7 +17,7 @@ public class Aktualisierung {
         Aktualisirung.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-
+                // TODO simpler
                 if (Var.inPause == true) {
 
                     if (tempAktualisirung == 0) {

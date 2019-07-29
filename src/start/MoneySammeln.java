@@ -5,6 +5,7 @@ import java.util.TimerTask;
 
 public class MoneySammeln {
 
+    // TODO privat, da die Klasse MoneySammeln die Datenhoheit besitzt.
     Timer Msameln;
 
     public MoneySammeln() {
@@ -15,6 +16,7 @@ public class MoneySammeln {
 
             public void run() {
 
+                // TODO simpler machen
                 if (Var.ingame == true) {
 
                     for (int i = 0; i <= 6; i++) {

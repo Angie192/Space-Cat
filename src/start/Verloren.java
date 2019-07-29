@@ -4,6 +4,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Verloren {
+
+    // TODO privat, da die Klasse Verloren die Datenhoheit besitzt.
     Timer lose;
 
     private int temp = 0, temp1 = 0, temp2 = 0;
@@ -19,6 +21,7 @@ public class Verloren {
             @Override
             public void run() {
 
+                // TODO simpler schreiben
                 if (Var.lose == true) {
 
                     if (temp >= 0 && temp <= 55) {

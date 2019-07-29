@@ -14,7 +14,7 @@ public class FeindKontakt {
         Fkontakt.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-
+                // TODO simpler
                 if (Var.ingame == true) {
 
                     for (int i = 0; i <= 3; i++) {

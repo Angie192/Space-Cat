@@ -14,6 +14,7 @@ public class Label extends JLabel {
 
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
+        // TODO simpler
         if (Var.ingame == true) {
 
             g.drawImage(Var.ib1, 0, Var.backgroundY1, null);
@@ -30,33 +31,35 @@ public class Label extends JLabel {
 
 
             // Lissi
+            // TODO simpler
             if (Var.kontakt == true || Var.kontakt1 == true || Var.kontakt2 == true || Var.kontakt3 == true) {
                 g.drawImage(Var.ic10, Var.x - 20, Var.y, null);
-
+            // TODO simpler
             } else if (Var.moveleft == true && Var.jump == true) {
                 g.drawImage(Var.ic6, Var.x, Var.y, null);
-
+            // TODO simpler
             } else if (Var.jump == true && Var.moveright == true) {
                 g.drawImage(Var.ic7, Var.x, Var.y, null);
-
+            // TODO simpler
             } else if (Var.down == true && Var.moveright == true) {
                 g.drawImage(Var.ic8, Var.x, Var.y, null);
-
+            // TODO simpler
             } else if (Var.down == true && Var.moveleft == true) {
                 g.drawImage(Var.ic9, Var.x, Var.y, null);
-
+            // TODO simpler
             } else if (Var.moveleft == true) {
                 g.drawImage(Var.ic3, Var.x, Var.y, null);
-
+            // TODO simpler
             } else if (Var.jump == true) {
                 g.drawImage(Var.ic4, Var.x, Var.y, null);
-
+            // TODO simpler
             } else if (Var.moveright == true) {
                 g.drawImage(Var.ic1, Var.x, Var.y, null);
-
+            // TODO simpler
             } else if (Var.donot == true) {
                 g.drawImage(Var.ic2, Var.x, Var.y, null);
 
+                // TODO simpler
             } else if (Var.down == true) {
                 g.drawImage(Var.ic5, Var.x, Var.y, null);
             }
@@ -65,6 +68,7 @@ public class Label extends JLabel {
             // Gegener
 
             for (int i = 0; i <= 3; i++) {
+                // TODO simpler
                 if (Var.kontakt == true) {
                     g.drawImage(Var.ig1t, Var.feindx[0] - 48, Var.feindy[0], null);
 
@@ -72,6 +76,7 @@ public class Label extends JLabel {
                     g.drawImage(Var.ig1, Var.feindx[0], Var.feindy[0], 110, 113, null);
 
                 }
+                // TODO simpler
                 if (Var.kontakt1 == true) {
                     g.drawImage(Var.ig1t, Var.feindx[1] - 48, Var.feindy[1], null);
 
@@ -79,6 +84,7 @@ public class Label extends JLabel {
                     g.drawImage(Var.ig1, Var.feindx[1], Var.feindy[1], 110, 113, null);
 
                 }
+                // TODO simpler
                 if (Var.kontakt2 == true) {
                     g.drawImage(Var.ig1t, Var.feindx[2] - 48, Var.feindy[2], null);
 
@@ -86,6 +92,7 @@ public class Label extends JLabel {
                     g.drawImage(Var.ig1, Var.feindx[2], Var.feindy[2], 110, 113, null);
 
                 }
+                // TODO simpler
                 if (Var.kontakt3 == true) {
                     g.drawImage(Var.ig1t, Var.feindx[3] - 48, Var.feindy[3], null);
 
@@ -104,7 +111,7 @@ public class Label extends JLabel {
                 g.drawString("Leben: " + Var.Leben, 25, 950);
 
             }
-
+            // TODO simpler
         } else if (Var.inPause == true) {
 
             g.drawImage(Var.ib1, 0, Var.backgroundY1, null);
@@ -125,8 +132,9 @@ public class Label extends JLabel {
             g.setColor(new Color(100, 100, 100, 128));
             g.fillRect(0, 0, Var.screenwight, Var.screenhight);
 
+            // TODO simpler
             if (Var.lose == true) {
-
+                // TODO simpler
                 if (Var.lose == true) {
                     g.setColor(Color.BLUE);
                     g.setFont(new Font("Zapata", Font.BOLD, 35));
@@ -140,6 +148,7 @@ public class Label extends JLabel {
                 }
             }
 
+            // TODO simpler
         } else if (Var.inHauptmeü == true || Var.inOptionen == true || Var.inLaden == true) {
 
             g.drawImage(Var.ib3, 0, 0, null);

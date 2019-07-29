@@ -3,11 +3,13 @@ package start;
 import javax.swing.*;
 import java.awt.*;
 
+
+// TODO Gui von JFrame erben lassen
 public class Gui {
 
     public Gui() {
 
-
+        // TODO da Gui nun von JFrame erbt, müssen die Eigenschaften anderes gesetzt werden
         Var.jfl = new JFrame();
         Var.jfl.setSize(Var.screenwight, Var.screenhight);
         Var.jfl.setLocationRelativeTo((Component) null);

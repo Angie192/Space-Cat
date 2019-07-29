@@ -6,8 +6,11 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+
+
 public class Var {
 
+    // TODO muss nicht statisch sein
     static JFrame jfl;
     static int screenwight = 800, screenhight = 1000;
     static int backgroundY1 = 4000, backgroundY2 = 0, backgroundspeed = 100;
@@ -16,6 +19,7 @@ public class Var {
     static boolean kontakt = false, kontakt1 = false, kontakt2 = false, kontakt3 = false, lose = false;
     static boolean ingame = true, inHauptmeü = false, inPause = false, inOptionen = false, inLaden = false;
     static boolean neustard = false;
+    // TODO muss nicht statisch sein
     static Label label1;
 
     static int feindx[] = new int[4], feindy[] = new int[4];
@@ -24,13 +28,20 @@ public class Var {
     static int monyX[] = new int[7], monyY[] = new int[7], monyspeed[] = new int[7];
     static int Dosen = 0, Leben = 3, maxLeben = 5;
 
+    // TODO muss nicht statisch sein
     static JButton btNeuStard, btFortsetzen, btOptionen, btHauptmeü;
+    // TODO muss nicht statisch sein
     static JButton btShtum;
+    // TODO muss nicht statisch sein
     static JButton btStart, btBenden, btLaden, btOptionenHaupt;
 
+    // TODO muss nicht statisch sein
     static BufferedImage ib1, ib2, ib3;
+    // TODO muss nicht statisch sein
     static BufferedImage ic1, ic2, ic3, ic4, ic5, ic6, ic7, ic8, ic9, ic10;
+    // TODO muss nicht statisch sein
     static BufferedImage ig1, ig1t;
+    // TODO muss nicht statisch sein
     static BufferedImage im3;
 
     public Var() {

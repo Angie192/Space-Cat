@@ -69,7 +69,7 @@ public class ActionHandler implements ActionListener {
             Var.btOptionen.setVisible(false);
             Var.btShtum.setVisible(false);
             Var.btOptionenHaupt.setVisible(false);
-
+// TODO simpler
         } else if (e.getSource() == Var.btHauptmeü || Var.inHauptmeü == true) {
 
             Var.inLaden = false;
@@ -126,12 +126,12 @@ public class ActionHandler implements ActionListener {
                 Var.btShtum.setVisible(true);
                 Var.btOptionenHaupt.setVisible(false);
 
+                // TODO weg
                 if (e.getSource() == Var.btShtum) {
 
                 }
-
+// TODO weg
             } else if (e.getSource() == Var.btLaden) {
-
 
             } else if (e.getSource() == Var.btBenden) {
                 System.exit(0);
