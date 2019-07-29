@@ -1,6 +1,4 @@
-package Start;
-
-import javafx.scene.control.skin.CellSkinBase;
+package start;
 
 import javax.swing.*;
 import java.awt.*;
@@ -96,11 +94,9 @@ public class Label extends JLabel {
                 }
 
 
-                    g.setColor(Color.BLUE);
-                    g.setFont(new Font("Comic Sans MS", Font.BOLD, 35));
-                    g.drawString("Dosen: " + Var.Dosen, 25, 900);
-
-
+                g.setColor(Color.BLUE);
+                g.setFont(new Font("Comic Sans MS", Font.BOLD, 35));
+                g.drawString("Dosen: " + Var.Dosen, 25, 900);
 
 
                 g.setColor(Color.green);
@@ -109,7 +105,7 @@ public class Label extends JLabel {
 
             }
 
-        } else if (Var.inPause == true ) {
+        } else if (Var.inPause == true) {
 
             g.drawImage(Var.ib1, 0, Var.backgroundY1, null);
             g.drawImage(Var.ib2, 0, Var.backgroundY2, null);
@@ -126,8 +122,8 @@ public class Label extends JLabel {
                 g.drawImage(Var.ig1, Var.feindx[i], Var.feindy[i], null);
             }
 
-            g.setColor(new Color(100,100,100, 128));
-            g.fillRect(0,0, Var.screenwight, Var.screenhight);
+            g.setColor(new Color(100, 100, 100, 128));
+            g.fillRect(0, 0, Var.screenwight, Var.screenhight);
 
             if (Var.lose == true) {
 

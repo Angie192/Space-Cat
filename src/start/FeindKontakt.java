@@ -1,13 +1,13 @@
-package Start;
+package start;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Feindkontakt {
+public class FeindKontakt {
     Timer Fkontakt;
     private int temp = 0, temp1 = 0, temp2 = 0, temp3 = 0;
 
-    public Feindkontakt() {
+    public FeindKontakt() {
 
         Fkontakt = new Timer();
 
@@ -102,7 +102,7 @@ public class Feindkontakt {
 
             }
 
-                }, 0, 15);
+        }, 0, 15);
 
     }
 

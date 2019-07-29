@@ -1,10 +1,10 @@
-package Start;
+package start;
 
-import javax.swing.*;
 import javax.imageio.ImageIO;
+import javax.swing.*;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.awt.image.BufferedImage;
 
 public class Var {
 
@@ -13,7 +13,7 @@ public class Var {
     static int backgroundY1 = 4000, backgroundY2 = 0, backgroundspeed = 100;
     static int x = 275, y = 850, movespeed = 4, jumpspeed = 3;
     static boolean moveright = false, moveleft = false, jump = false, down = false, donot = true;
-    static boolean kontakt = false, kontakt1 =false,kontakt2 =false,kontakt3 =false,  lose = false;
+    static boolean kontakt = false, kontakt1 = false, kontakt2 = false, kontakt3 = false, lose = false;
     static boolean ingame = true, inHauptmeü = false, inPause = false, inOptionen = false, inLaden = false;
     static boolean neustard = false;
     static Label label1;
@@ -24,12 +24,12 @@ public class Var {
     static int monyX[] = new int[7], monyY[] = new int[7], monyspeed[] = new int[7];
     static int Dosen = 0, Leben = 3, maxLeben = 5;
 
-    static JButton btNeuStard,  btFortsetzen,  btOptionen, btHauptmeü;
+    static JButton btNeuStard, btFortsetzen, btOptionen, btHauptmeü;
     static JButton btShtum;
     static JButton btStart, btBenden, btLaden, btOptionenHaupt;
 
     static BufferedImage ib1, ib2, ib3;
-    static BufferedImage ic1, ic2, ic3, ic4, ic5,ic6, ic7, ic8, ic9,ic10;
+    static BufferedImage ic1, ic2, ic3, ic4, ic5, ic6, ic7, ic8, ic9, ic10;
     static BufferedImage ig1, ig1t;
     static BufferedImage im3;
 
@@ -59,8 +59,6 @@ public class Var {
             ig1t = ImageIO.read(new File("rsc/G1tot.png"));
             //Mony
             im3 = ImageIO.read(new File("rsc/M3.png"));
-
-
 
 
         } catch (IOException e) {

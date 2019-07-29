@@ -1,9 +1,9 @@
-package Start;
+package start;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Actionhandler implements ActionListener {
+public class ActionHandler implements ActionListener {
 
 
     @Override
@@ -25,12 +25,12 @@ public class Actionhandler implements ActionListener {
             Var.btShtum.setVisible(false);
             Var.btOptionenHaupt.setVisible(false);
 
-            Aktualsisrung.tempAktualisirung = 0;
+            Aktualisierung.tempAktualisirung = 0;
             Key.tempKeyhandler = 0;
 
             Var.jfl.requestFocus();
 
-        } else if (e.getSource() == Var.btNeuStard){
+        } else if (e.getSource() == Var.btNeuStard) {
 
             Var.ingame = true;
             Var.neustard = true;
@@ -48,14 +48,14 @@ public class Actionhandler implements ActionListener {
             Var.btShtum.setVisible(false);
             Var.btOptionenHaupt.setVisible(false);
 
-            Aktualsisrung.tempAktualisirung = 0;
+            Aktualisierung.tempAktualisirung = 0;
             Key.tempKeyhandler = 0;
 
             Var.jfl.requestFocus();
 
-        } else  if (e.getSource() == Var.btOptionen){
+        } else if (e.getSource() == Var.btOptionen) {
 
-            Var.inPause =false;
+            Var.inPause = false;
             Var.inLaden = false;
             Var.inOptionen = true;
             Var.inHauptmeü = false;
@@ -87,7 +87,7 @@ public class Actionhandler implements ActionListener {
             Var.btShtum.setVisible(false);
             Var.btOptionenHaupt.setVisible(true);
 
-            if (e.getSource() == Var.btStart){
+            if (e.getSource() == Var.btStart) {
 
                 Var.ingame = true;
                 Var.inPause = false;
@@ -104,12 +104,12 @@ public class Actionhandler implements ActionListener {
                 Var.btShtum.setVisible(false);
                 Var.btOptionenHaupt.setVisible(false);
 
-                Aktualsisrung.tempAktualisirung = 0;
+                Aktualisierung.tempAktualisirung = 0;
                 Key.tempKeyhandler = 0;
 
                 Var.jfl.requestFocus();
 
-            } else if (e.getSource() == Var.btOptionenHaupt){
+            } else if (e.getSource() == Var.btOptionenHaupt) {
 
                 Var.ingame = false;
                 Var.inPause = false;
@@ -130,7 +130,7 @@ public class Actionhandler implements ActionListener {
 
                 }
 
-            } else if (e.getSource() == Var.btLaden){
+            } else if (e.getSource() == Var.btLaden) {
 
 
             } else if (e.getSource() == Var.btBenden) {
