@@ -5,12 +5,10 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-// FIXME Datei ordentlich formatieren
 
-// FIXME nicht von Var erben
-public class ButtonSthum extends Var {
+public class SthumButton {
 
-    public ButtonSthum() {
+    public SthumButton() {
 
         // stum positin noch nicht angepast
         btShtum = new JButton();
@@ -22,6 +20,7 @@ public class ButtonSthum extends Var {
         btShtum.setFont(new Font("Arial", Font.PLAIN, 35));
         btShtum.setForeground(Color.ORANGE);
         btShtum.addMouseListener(new MouseAdapter() {
+
             @Override
             public void mouseEntered(MouseEvent e) {
 
@@ -35,11 +34,8 @@ public class ButtonSthum extends Var {
 
             }
 
-
         });
         jfl.add(btShtum);
     }
-
-
 
 }

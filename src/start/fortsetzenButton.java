@@ -10,10 +10,10 @@ import java.awt.event.MouseEvent;
 
 // FIXME nicht von Var erben
 // FIXME camelCase schreibweise
-public class Buttonsfortsetzen extends Var {
+public class fortsetzenButton extends Var {
 
 
-    public Buttonsfortsetzen() {
+    public fortsetzenButton() {
 
 
         //Fortsetzen

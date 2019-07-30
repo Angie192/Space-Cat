@@ -3,15 +3,15 @@ package start;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-// FIXME nicht von Aktualisierung erben
-public class ActionHandler extends Aktualisierung implements ActionListener {
+
+public class ActionHandler  implements ActionListener {
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btFortsetzen) {
 
-           ingame = true;
+             ingame = true;
             inPause = false;
             inLaden = false;
             inOptionen = false;

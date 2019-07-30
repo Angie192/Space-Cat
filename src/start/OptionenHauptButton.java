@@ -5,13 +5,10 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-// FIXME Datei ordentlich formatieren
 
-// FIXME nicht von Var erben
-// FIXME camelCase schreibweise
-public class ButtonOptionenhaupt extends Var {
+public class OptionenHauptButton {
 
-    public ButtonOptionenhaupt() {
+    public OptionenHauptButton() {
 
         // optionenHaupt positin noch nicht angepast
         btOptionenHaupt = new JButton();
@@ -36,12 +33,10 @@ public class ButtonOptionenhaupt extends Var {
 
             }
 
-
         });
         jfl.add(btOptionenHaupt);
 
 
     }
-
 
 }

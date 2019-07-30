@@ -3,11 +3,12 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
-// FIXME nicht von Var erben
-public class Back extends Var{
+
+public class Back{
     Timer background;
 
     public Back() {
+
         background = new Timer();
         background.scheduleAtFixedRate(new TimerTask() {
 

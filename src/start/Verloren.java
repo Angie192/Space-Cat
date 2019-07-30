@@ -3,96 +3,93 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
-// FIXME Datei ordentlich formatieren
 
-// FIXME nicht von Var erben
-public class Verloren extends Var{
+
+
+public class Verloren {
 
     // TODO Sichtbarkeit beachten
-    // TODO Attribute und Variable beginnen mit Kleinbuchstaben
-    Timer Verloren;
+
+    Timer verloren;
 
     private int temp = 0, temp1 = 0, temp2 = 0;
 
+          private Verloren() {
 
-  private   Verloren() {
-
-        Verloren= new Timer();
-
-
-        Verloren.scheduleAtFixedRate(new TimerTask() {
-
-            @Override
-            public void run() {
+                verloren= new Timer();
 
 
-                if (lose) {
+                verloren.scheduleAtFixedRate(new TimerTask() {
 
-                    if (temp >= 0 && temp <= 55) {
-                        temp++;
+                    @Override
+                    public void run() {
 
-                    } else if (temp == 56) {
 
-                        System.out.println("Verloren");
+                        if (lose) {
 
-                        //Mony
-                        for (int i = 0; i <= 6; i++) {
-                            monyY[i] = 0;
+                            if (temp >= 0 && temp <= 55) {
+                                temp++;
+
+                            } else if (temp == 56) {
+
+                                System.out.println("Verloren");
+
+                                //Mony
+                                for (int i = 0; i <= 6; i++) {
+                                    monyY[i] = 0;
+                                }
+
+                                for (int u = 0; u <= 6; u++) {
+                                    monyX[u] = 40 + temp1;
+                                    monyY[u] = -606 + temp1;
+
+                                    temp1 += 100;
+
+                                }
+
+                                    monyspeed[0] = 3;
+                                    monyspeed[1] = 2;
+                                    monyspeed[2] = 1;
+                                    monyspeed[3] = 2;
+                                    monyspeed[4] = 4;
+                                    monyspeed[5] = 1;
+                                    monyspeed[6] = 2;
+
+                                    // Gegner
+                                    for (int i = 0; i <= 3; i++) {
+                                        feindy[i] = 0;
+                                    }
+
+                                    for (int i = 0; i <= 3; i++) {
+                                        feindx[i] = 80 + temp2;
+                                        feindy[i] = -1000 + temp2;
+
+                                        temp2 += 200;
+
+                                    }
+
+                                        feindspeed[0] = 1;
+                                        feindspeed[1] = 3;
+                                        feindspeed[2] = 4;
+                                        feindspeed[3] = 2;
+
+                                        temp = 0;
+                                        temp1 = 0;
+                                        temp2 = 0;
+
+                                        if (Dosen > 5) {
+                                            Dosen -= 5;
+                                        } else {
+                                            Dosen = 0;
+                                        }
+
+                                        Leben = 3;
+                                        inPause = true;
+                            }
                         }
-
-                        for (int u = 0; u <= 6; u++) {
-                            monyX[u] = 40 + temp1;
-                           monyY[u] = -606 + temp1;
-
-                            temp1 += 100;
-
-                        }
-
-                        monyspeed[0] = 3;
-                        monyspeed[1] = 2;
-                        monyspeed[2] = 1;
-                        monyspeed[3] = 2;
-                        monyspeed[4] = 4;
-                        monyspeed[5] = 1;
-                        monyspeed[6] = 2;
-
-                        // Gegner
-                        for (int i = 0; i <= 3; i++) {
-                            feindy[i] = 0;
-                        }
-
-                        for (int i = 0; i <= 3; i++) {
-                            feindx[i] = 80 + temp2;
-                            feindy[i] = -1000 + temp2;
-
-                            temp2 += 200;
-                        }
-
-                        feindspeed[0] = 1;
-                        feindspeed[1] = 3;
-                        feindspeed[2] = 4;
-                        feindspeed[3] = 2;
-
-                        temp = 0;
-                        temp1 = 0;
-                        temp2 = 0;
-
-                        if (Dosen > 5) {
-                            Dosen -= 5;
-                        } else {
-                            Dosen = 0;
-                        }
-
-                        Leben = 3;
-                        inPause = true;
                     }
-                }
-            }
-        }, 0, 15);
-
-
+                }, 0, 15);
     }
-
 
 }
 

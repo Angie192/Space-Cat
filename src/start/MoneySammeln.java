@@ -3,17 +3,14 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
-// FIXME Datei ordentlich formatieren
 
-// FIXME nicht von Var erben
-public class MoneySammeln extends Var{
+
+public class MoneySammeln {
 
    private Timer Msameln;
-
-    private MoneySammeln() {
+   private MoneySammeln() {
 
         Msameln = new Timer();
-
         Msameln.scheduleAtFixedRate(new TimerTask() {
 
             public void run() {
@@ -31,12 +28,9 @@ public class MoneySammeln extends Var{
                         }
                     }
                 }
-
             }
-
 
         }, 0, 10);
 
     }
-
 }

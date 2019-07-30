@@ -1,9 +1,7 @@
 package start;
 
-// FIXME Datei ordentlich formatieren
 
-// FIXME nicht von Var erben
-public class Hauptmenue extends Var{
+public class Hauptmenue {
 
     public Hauptmenue() {
 
@@ -15,7 +13,6 @@ public class Hauptmenue extends Var{
             btStart.setVisible(true);
 
         } else jfl.requestFocus();
-
 
     }
 

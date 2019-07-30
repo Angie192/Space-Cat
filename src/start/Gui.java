@@ -11,34 +11,42 @@ public class Gui extends JFrame{
     public Gui() {
 
 
-        // FIXME kein jfl
-        JFrame jfl;
+        new Back();
+        new CatMove();
+        new FeindMove();
+        new FeindKontakt();
+        new MoneySammeln();
+        new Verloren();
+
+
+        new Aktualisierung();
+        new fortsetzenButton();
+        new EndeButton();
+        new HaupmeüButton();
+        new LadenButton();
+        new NeuStartButton();
+        new OptionenButton();
+        new ButtonOptionenhaupt();
+        new ButtonStard();
+        new SthumButton();
+
         Label label1;
 
-        // FIXME kein jfl
-        jfl =new JFrame();
-        // FIXME nicht auf jfl setzen
-        jfl.setSize(800, 1000);
-        // FIXME nicht auf jfl setzen
-        jfl.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        // FIXME nicht auf jfl setzen
-        jfl.setVisible(true);
-        // FIXME nicht auf jfl setzen
-        jfl.setLayout((LayoutManager) null);
-        // FIXME nicht auf jfl setzen
-        jfl.setTitle("SpaceCat");
-        // FIXME nicht auf jfl setzen
-        jfl.setResizable(false);
-        // FIXME nicht auf jfl setzen
-        jfl.requestFocus();
-        // FIXME nicht auf jfl setzen
+
+        new JFrame();
+
+        setSize(800, 1000);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+        setLayout((LayoutManager) null);
+        setTitle("SpaceCat");
+        setResizable(false);
+        requestFocus();
         label1 = new Label();
         label1.setBounds(0, 0, 800, 1000);
         label1.setVisible(true);
-        // FIXME nicht auf jfl setzen
-        jfl.add(label1);
-        // FIXME nicht auf jfl setzen
-        jfl.addKeyListener(new Key() {
+        add(label1);
+        addKeyListener(new Key() {
             @Override
             public void keyTyped(KeyEvent e) {
 

@@ -3,105 +3,97 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
-// FIXME Datei ordentlich formatieren
 
-// FIXME nicht von Var erben
-public class FeindKontakt extends Var{
+public class FeindKontakt {
     // TODO sichtbarkeit beachten
     Timer Fkontakt;
     private int temp = 0, temp1 = 0, temp2 = 0, temp3 = 0;
 
     public FeindKontakt() {
 
-        Fkontakt = new Timer();
+                Fkontakt = new Timer();
+                Fkontakt.scheduleAtFixedRate(new TimerTask() {
+                    @Override
+                    public void run() {
 
-        Fkontakt.scheduleAtFixedRate(new TimerTask() {
-            @Override
-            public void run() {
+                        if (ingame) {
 
-                if (ingame) {
+                            for (int i = 0; i <= 3; i++) {
 
-                    for (int i = 0; i <= 3; i++) {
+                                if (temp == 0) {
 
-                        if (temp == 0) {
+                                    if (x >= feindx[0] - 110 && x <= feindx[0] + 110 && y >= feindy[0] - 113 && y <= feindy[0] + 113) {
 
-                            if (x >= feindx[0] - 110 && x <= feindx[0] + 110 && y >= feindy[0] - 113 && y <= feindy[0] + 113) {
+                                        kontakt = true;
+                                        feindy[0] = -1000;
 
-                                kontakt = true;
-                                feindy[0] = -1000;
+                                        if (Leben >= 1) {
+                                            Leben -= 1;
+                                        }
 
-                                if (Leben >= 1) {
-                                    Leben -= 1;
+                                    }
+
+                                    if (x >= feindx[1] - 110 && x <= feindx[1] + 110 && y >= feindy[1] - 113 && y <= feindy[1] + 113) {
+
+                                        kontakt1 = true;
+
+                                        if (temp1 == 0) {
+                                            feindy[1] = -1000;
+                                        }
+
+                                        if (Leben >= 1) {
+                                            Leben -= 1;
+                                        }
+
+                                    }
+
+                                    if (x >= feindx[2] - 110 && x <= feindx[2] + 110 && y >= feindy[2] - 113 && y <= feindy[2] + 113) {
+
+                                        kontakt2 = true;
+
+
+                                        feindy[2] = -1000;
+
+
+                                        if (Leben >= 1) {
+                                            Leben -= 1;
+                                        }
+
+                                    }
+
+                                    if (x >= feindx[3] - 110 && x <= feindx[3] + 110 && y >= feindy[3] - 113 && y <= feindy[3] + 113) {
+
+                                        kontakt3 = true;
+                                        feindy[3] = -1000;
+
+                                        if (Leben >= 1) {
+                                            Leben -= 1;
+                                        }
+
+                                    }
+
+                                    if (Leben == 0) {
+                                        lose = true;
+
+                                    } else if (Leben > 0) {
+
+                                        lose = false;
+                                    }
+
+                                    temp++;
                                 }
-
                             }
 
-
-                            if (x >= feindx[1] - 110 && x <= feindx[1] + 110 && y >= feindy[1] - 113 && y <= feindy[1] + 113) {
-
-                                kontakt1 = true;
-
-                                if (temp1 == 0) {
-                                    feindy[1] = -1000;
-                                }
-
-                                if (Leben >= 1) {
-                                    Leben -= 1;
-                                }
-
-                            }
-
-
-                            if (x >= feindx[2] - 110 && x <= feindx[2] + 110 && y >= feindy[2] - 113 && y <= feindy[2] + 113) {
-
-                                kontakt2 = true;
-
-
-                                feindy[2] = -1000;
-
-
-                                if (Leben >= 1) {
-                                    Leben -= 1;
-                                }
-
-                            }
-
-
-                            if (x >= feindx[3] - 110 && x <= feindx[3] + 110 && y >= feindy[3] - 113 && y <= feindy[3] + 113) {
-
-                                kontakt3 = true;
-                                feindy[3] = -1000;
-
-                                if (Leben >= 1) {
-                                    Leben -= 1;
-                                }
-
-                            }
-
-                            if (Leben == 0) {
-                                lose = true;
-
-                            } else if (Leben > 0) {
-
-                                lose = false;
-                            }
-
+                        if (temp >= 0 && temp <= 55) {
                             temp++;
+                        } else if (temp == 56) {
+                            temp = 0;
+
+                            kontakt = false;
+                            kontakt1 = false;
+                            kontakt2 = false;
+                            kontakt3 = false;
                         }
-                    }
-
-                    if (temp >= 0 && temp <= 55) {
-                        temp++;
-                    } else if (temp == 56) {
-                        temp = 0;
-
-                        kontakt = false;
-                        kontakt1 = false;
-                        kontakt2 = false;
-                        kontakt3 = false;
-                    }
-
-
                 }
 
             }
