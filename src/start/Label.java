@@ -39,7 +39,7 @@ public class Label extends JLabel {
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
         // TODO simpler
-        if (ingame == true) {
+        if (ingame) {
 
             g.drawImage(ib1, 0, backgroundY1, null);
             g.drawImage(ib2, 0, backgroundY2, null);
@@ -56,35 +56,35 @@ public class Label extends JLabel {
 
             // Lissi
             // TODO simpler
-            if (kontakt == true || kontakt1 == true || kontakt2 == true || kontakt3 == true) {
+            if (kontakt || kontakt1 || kontakt2 || kontakt3) {
                 g.drawImage(ic10, x - 20, y, null);
             // TODO simpler
-            } else if (moveleft == true && jump == true) {
+            } else if (moveleft && jump) {
                 g.drawImage(ic6, x, y, null);
             // TODO simpler
-            } else if (jump == true && moveright == true) {
+            } else if (jump && moveright ) {
                 g.drawImage(ic7, x, y, null);
             // TODO simpler
-            } else if (down == true && moveright == true) {
+            } else if (down && moveright) {
                 g.drawImage(ic8, x, y, null);
             // TODO simpler
-            } else if (down == true && moveleft == true) {
+            } else if (down && moveleft) {
                 g.drawImage(ic9, x, y, null);
             // TODO simpler
-            } else if (moveleft == true) {
+            } else if (moveleft) {
                 g.drawImage(ic3, x, y, null);
             // TODO simpler
-            } else if (jump == true) {
+            } else if (jump) {
                 g.drawImage(ic4, x, y, null);
             // TODO simpler
-            } else if (moveright == true) {
+            } else if (moveright) {
                 g.drawImage(ic1, x, y, null);
             // TODO simpler
-            } else if (donot == true) {
+            } else if (donot) {
                 g.drawImage(ic2, x, y, null);
 
                 // TODO simpler
-            } else if (down == true) {
+            } else if (down) {
                 g.drawImage(ic5, x, y, null);
             }
 
@@ -93,7 +93,7 @@ public class Label extends JLabel {
 
             for (int i = 0; i <= 3; i++) {
                 // TODO simpler
-                if (kontakt == true) {
+                if (kontakt) {
                     g.drawImage(ig1t, feindx[0] - 48, feindy[0], null);
 
                 } else {
@@ -101,7 +101,7 @@ public class Label extends JLabel {
 
                 }
                 // TODO simpler
-                if (kontakt1 == true) {
+                if (kontakt1) {
                     g.drawImage(ig1t, feindx[1] - 48, feindy[1], null);
 
                 } else {
@@ -109,7 +109,7 @@ public class Label extends JLabel {
 
                 }
                 // TODO simpler
-                if (kontakt2 == true) {
+                if (kontakt2) {
                     g.drawImage(ig1t, feindx[2] - 48, feindy[2], null);
 
                 } else {
@@ -117,7 +117,7 @@ public class Label extends JLabel {
 
                 }
                 // TODO simpler
-                if (kontakt3 == true) {
+                if (kontakt3) {
                     g.drawImage(ig1t, feindx[3] - 48, feindy[3], null);
 
                 } else {
@@ -136,7 +136,7 @@ public class Label extends JLabel {
 
             }
             // TODO simpler
-        } else if (inPause == true) {
+        } else if (inPause) {
 
             g.drawImage(ib1, 0, backgroundY1, null);
             g.drawImage(ib2, 0, backgroundY2, null);
@@ -159,7 +159,7 @@ public class Label extends JLabel {
             // TODO simpler
 
                 // TODO simpler
-                if (lose == true) {
+                if (lose ) {
                     g.setColor(Color.BLUE);
                     g.setFont(new Font("Zapata", Font.BOLD, 35));
                     g.drawString("Gesamelte Dosen: " + Dosen, 120, 400);
@@ -173,7 +173,7 @@ public class Label extends JLabel {
 
 
             // TODO simpler
-        } else if (inHauptmeü == true || inOptionen == true || inLaden == true) {
+        } else if (inHauptmeü || inOptionen || inLaden ) {
 
             g.drawImage(ib3, 0, 0, null);
 

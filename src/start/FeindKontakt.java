@@ -15,7 +15,7 @@ public class FeindKontakt extends Var{
             @Override
             public void run() {
                 // TODO simpler
-                if (ingame == true) {
+                if (ingame) {
 
                     for (int i = 0; i <= 3; i++) {
 

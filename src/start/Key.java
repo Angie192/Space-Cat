@@ -32,7 +32,7 @@ public abstract class Key  extends Aktualisierung implements KeyListener {
             donot = false;
         }
         // TODO simpler
-        if (inHauptmeü == false) {
+        if (inHauptmeü) {
 
             if (tempKeyhandler == 0) {
 

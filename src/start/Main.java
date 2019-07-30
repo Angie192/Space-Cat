@@ -13,7 +13,6 @@ public class Main {
         new Back();
         new CatMove();
         new FeindMove();
-        new Moneymove();
         new FeindKontakt();
         new MoneySammeln();
         new Verloren();

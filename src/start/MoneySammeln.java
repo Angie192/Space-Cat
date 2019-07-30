@@ -8,7 +8,7 @@ public class MoneySammeln extends Var{
     // TODO privat, da die Klasse MoneySammeln die Datenhoheit besitzt.
    private Timer Msameln;
 
-    public MoneySammeln() {
+    private MoneySammeln() {
 
         Msameln = new Timer();
 
@@ -17,7 +17,7 @@ public class MoneySammeln extends Var{
             public void run() {
 
                 // TODO simpler machen
-                if (ingame == true) {
+                if (ingame) {
 
                     for (int i = 0; i <= 6; i++) {
 

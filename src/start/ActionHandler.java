@@ -70,7 +70,7 @@ public class ActionHandler extends Aktualisierung implements ActionListener {
             btShtum.setVisible(false);
             btOptionenHaupt.setVisible(false);
 // TODO simpler
-        } else if (e.getSource() == btHauptmeü ||inHauptmeü == true) {
+        } else if (e.getSource() == btHauptmeü ||inHauptmeü) {
 
             inLaden = false;
             inOptionen = false;

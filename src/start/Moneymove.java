@@ -3,14 +3,14 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Moneymove extends Var{
+class Moneymove extends Var{
 
     // TODO privat, da die Klasse Moneymove die Datenhoheit besitzt.
     private Timer Monymove;
     private int temp = 0;
 
 
-    public Moneymove() {
+   private Moneymove() {
 
         for (int u = 0; u <= 6; u++) {
             monyX[u] = 40 + temp;
@@ -26,7 +26,7 @@ public class Moneymove extends Var{
             public void run() {
 
                 // TODO simpler
-                if (ingame == true) {
+                if (ingame) {
 
                     for (int u = 0; u <= 6; u++) {
 

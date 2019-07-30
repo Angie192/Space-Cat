@@ -6,7 +6,7 @@ import java.awt.event.KeyEvent;
 
 
 // TODO Gui von JFrame erben lassen
-public class Gui extends Label{
+public class Gui extends JFrame{
 
     public Gui() {
 
@@ -16,7 +16,7 @@ public class Gui extends Label{
         Label label1;
 
 
-        jfl = new JFrame();
+        jfl =new JFrame();
         jfl.setSize(800, 1000);
         jfl.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jfl.setVisible(true);
@@ -24,6 +24,10 @@ public class Gui extends Label{
         jfl.setTitle("SpaceCat");
         jfl.setResizable(false);
         jfl.requestFocus();
+        label1 = new Label();
+        label1.setBounds(0, 0, 800, 1000);
+        label1.setVisible(true);
+        jfl.add(label1);
         jfl.addKeyListener(new Key() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -31,10 +35,7 @@ public class Gui extends Label{
             }
         });
 
-        label1 = new Label();
-        label1.setBounds(0, 0, 800, 1000);
-        label1.setVisible(true);
-        jfl.add(label1);
+
 
 
     }

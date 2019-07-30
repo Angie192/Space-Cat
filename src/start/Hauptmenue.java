@@ -4,7 +4,7 @@ public class Hauptmenue extends Var{
 
     public Hauptmenue() {
         // TODO simpler
-        if (inHauptmeü == true) {
+        if (inHauptmeü) {
 
             btStart.requestFocus();
             btBenden.requestFocus();

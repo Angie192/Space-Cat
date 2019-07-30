@@ -11,7 +11,7 @@ public class Verloren extends Var{
     private int temp = 0, temp1 = 0, temp2 = 0;
 
 
-    Verloren() {
+  private   Verloren() {
 
         Verloren= new Timer();
 
@@ -22,7 +22,7 @@ public class Verloren extends Var{
             public void run() {
 
                 // TODO simpler schreiben
-                if (lose == true) {
+                if (lose) {
 
                     if (temp >= 0 && temp <= 55) {
                         temp++;

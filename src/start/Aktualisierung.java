@@ -18,7 +18,7 @@ public class Aktualisierung extends Var{
             @Override
             public void run() {
                 // TODO simpler
-                if (inPause == true) {
+                if (inPause) {
 
                     if (tempAktualisirung == 0) {
 

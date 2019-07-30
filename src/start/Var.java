@@ -8,7 +8,7 @@ import java.io.IOException;
 
 
 
-public class Var extends Gui{
+public class Var extends Label{
 
         JFrame jfl;
     // TODO muss nicht statisch sein*
