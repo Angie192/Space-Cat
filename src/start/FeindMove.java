@@ -4,7 +4,7 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class FeindMove {
+public class FeindMove extends Var {
     Timer gmove;
     private int temp = 0;
 
@@ -12,8 +12,8 @@ public class FeindMove {
     public FeindMove() {
 
         for (int i = 0; i <= 3; i++) {
-            Var.feindx[i] = 80 + temp;
-            Var.feindy[i] = -1000 + temp;
+            feindx[i] = 80 + temp;
+            feindy[i] = -1000 + temp;
 
             temp += 200;
 
@@ -24,26 +24,26 @@ public class FeindMove {
             @Override
             public void run() {
                 // TODO simpler
-                if (Var.ingame == true) {
+                if (ingame == true) {
 
                     for (int i = 0; i <= 3; i++) {
 
-                        Var.feindy[0] += Var.feindspeed[0];
+                        feindy[0] += feindspeed[0];
 
-                        if (Var.feindy[0] >= Var.screenhight) {
-                            Var.feindy[0] = -1000;
+                        if (feindy[0] >= screenhight) {
+                            feindy[0] = -1000;
                         }
-                        Var.feindy[1] += Var.feindspeed[1];
-                        if (Var.feindy[1] >= Var.screenhight) {
-                            Var.feindy[1] = -1000;
+                        feindy[1] += feindspeed[1];
+                        if (feindy[1] >= screenhight) {
+                            feindy[1] = -1000;
                         }
-                        Var.feindy[2] += Var.feindspeed[2];
-                        if (Var.feindy[2] >= Var.screenhight) {
-                            Var.feindy[2] = -1000;
+                        feindy[2] += feindspeed[2];
+                        if (feindy[2] >= screenhight) {
+                            feindy[2] = -1000;
                         }
-                        Var.feindy[3] += Var.feindspeed[3];
-                        if (Var.feindy[3] >= Var.screenhight) {
-                            Var.feindy[3] = -1000;
+                        feindy[3] += feindspeed[3];
+                        if (feindy[3] >= screenhight) {
+                            feindy[3] = -1000;
                         }
                     }
                 }

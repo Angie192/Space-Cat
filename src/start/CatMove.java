@@ -3,7 +3,7 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class CatMove {
+public class CatMove extends Var {
     Timer catmove;
 
 
@@ -14,33 +14,33 @@ public class CatMove {
             public void run() {
 
                 // TODO simpler
-                if (Var.ingame == true) {
+                if (ingame == true) {
 
                     // TODO simpler
-                    if (Var.moveright == true) {
-                        if (Var.x < 610) {
-                            Var.x += Var.movespeed;
+                    if (moveright == true) {
+                        if (x < 610) {
+                            x += movespeed;
 
                         }
                         // TODO simpler
-                    } else if (Var.moveleft == true) {
-                        if (Var.x > 0) {
-                            Var.x -= Var.movespeed;
+                    } else if (moveleft == true) {
+                        if (x > 0) {
+                            x -= movespeed;
 
                         }
                     }
 
                     // TODO simpler
-                    if (Var.jump == true) {
-                        if (Var.y > 0) {
-                            Var.y -= Var.jumpspeed;
+                    if (jump == true) {
+                        if (y > 0) {
+                            y -= jumpspeed;
                             //System.out.println(Var.y);
                         }
 
                     // TODO simpler
-                    } else if (Var.down == true) {
-                        if (Var.y < 839) {
-                            Var.y += Var.jumpspeed;
+                    } else if (down == true) {
+                        if (y < 839) {
+                            y += jumpspeed;
                         }
                     }
 

@@ -2,30 +2,39 @@ package start;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 
 // TODO Gui von JFrame erben lassen
-public class Gui {
+public class Gui extends Label{
 
     public Gui() {
 
         // TODO da Gui nun von JFrame erbt, müssen die Eigenschaften anderes gesetzt werden
-        Var.jfl = new JFrame();
-        Var.jfl.setSize(Var.screenwight, Var.screenhight);
-        Var.jfl.setLocationRelativeTo((Component) null);
-        Var.jfl.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Var.jfl.setVisible(true);
-        Var.jfl.setLayout((LayoutManager) null);
-        Var.jfl.setTitle("SpaceCat");
-        Var.jfl.setResizable(false);
-        Var.jfl.requestFocus();
-        Var.jfl.addKeyListener(new Key());
+
+        JFrame jfl;
+        Label label1;
 
 
-        Var.label1 = new Label();
-        Var.label1.setBounds(0, 0, Var.screenwight, Var.screenhight);
-        Var.label1.setVisible(true);
-        Var.jfl.add(Var.label1);
+        jfl = new JFrame();
+        jfl.setSize(800, 1000);
+        jfl.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jfl.setVisible(true);
+        jfl.setLayout((LayoutManager) null);
+        jfl.setTitle("SpaceCat");
+        jfl.setResizable(false);
+        jfl.requestFocus();
+        jfl.addKeyListener(new Key() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+        });
+
+        label1 = new Label();
+        label1.setBounds(0, 0, 800, 1000);
+        label1.setVisible(true);
+        jfl.add(label1);
 
 
     }

@@ -2,8 +2,32 @@ package start;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class Label extends JLabel {
+
+
+    int screenwight = 800, screenhight = 1000;
+    int backgroundY1 = 4000, backgroundY2 = 0, backgroundspeed = 100;
+    int x = 275, y = 850, movespeed = 4, jumpspeed = 3;
+    boolean moveright = false, moveleft = false, jump = false, down = false, donot = true;
+    boolean kontakt = false, kontakt1 = false, kontakt2 = false, kontakt3 = false, lose = false;
+    boolean ingame = true, inHauptmeü = false, inPause = false, inOptionen = false, inLaden = false;
+    boolean neustard = false;
+
+    int feindx[] = new int[4], feindy[] = new int[4];
+
+    int feindspeed[] = new int[4];
+    int monyX[] = new int[7], monyY[] = new int[7], monyspeed[] = new int[7];
+    int Dosen = 0, Leben = 3, maxLeben = 5;
+
+
+
+    BufferedImage ib1, ib2, ib3;
+    BufferedImage ic1, ic2, ic3, ic4, ic5, ic6, ic7, ic8, ic9, ic10;
+    BufferedImage ig1, ig1t;
+    BufferedImage im3;
+
     private static final long serialVersionUID = 1L;
 
     protected void paintComponent(Graphics g) {
@@ -15,10 +39,10 @@ public class Label extends JLabel {
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
         // TODO simpler
-        if (Var.ingame == true) {
+        if (ingame == true) {
 
-            g.drawImage(Var.ib1, 0, Var.backgroundY1, null);
-            g.drawImage(Var.ib2, 0, Var.backgroundY2, null);
+            g.drawImage(ib1, 0, backgroundY1, null);
+            g.drawImage(ib2, 0, backgroundY2, null);
 
 
             repaint();
@@ -26,42 +50,42 @@ public class Label extends JLabel {
             //Mony
             for (int u = 0; u <= 6; u++) {
 
-                g.drawImage(Var.im3, Var.monyX[u], Var.monyY[u], 75, 55, null);
+                g.drawImage(im3, monyX[u], monyY[u], 75, 55, null);
             }
 
 
             // Lissi
             // TODO simpler
-            if (Var.kontakt == true || Var.kontakt1 == true || Var.kontakt2 == true || Var.kontakt3 == true) {
-                g.drawImage(Var.ic10, Var.x - 20, Var.y, null);
+            if (kontakt == true || kontakt1 == true || kontakt2 == true || kontakt3 == true) {
+                g.drawImage(ic10, x - 20, y, null);
             // TODO simpler
-            } else if (Var.moveleft == true && Var.jump == true) {
-                g.drawImage(Var.ic6, Var.x, Var.y, null);
+            } else if (moveleft == true && jump == true) {
+                g.drawImage(ic6, x, y, null);
             // TODO simpler
-            } else if (Var.jump == true && Var.moveright == true) {
-                g.drawImage(Var.ic7, Var.x, Var.y, null);
+            } else if (jump == true && moveright == true) {
+                g.drawImage(ic7, x, y, null);
             // TODO simpler
-            } else if (Var.down == true && Var.moveright == true) {
-                g.drawImage(Var.ic8, Var.x, Var.y, null);
+            } else if (down == true && moveright == true) {
+                g.drawImage(ic8, x, y, null);
             // TODO simpler
-            } else if (Var.down == true && Var.moveleft == true) {
-                g.drawImage(Var.ic9, Var.x, Var.y, null);
+            } else if (down == true && moveleft == true) {
+                g.drawImage(ic9, x, y, null);
             // TODO simpler
-            } else if (Var.moveleft == true) {
-                g.drawImage(Var.ic3, Var.x, Var.y, null);
+            } else if (moveleft == true) {
+                g.drawImage(ic3, x, y, null);
             // TODO simpler
-            } else if (Var.jump == true) {
-                g.drawImage(Var.ic4, Var.x, Var.y, null);
+            } else if (jump == true) {
+                g.drawImage(ic4, x, y, null);
             // TODO simpler
-            } else if (Var.moveright == true) {
-                g.drawImage(Var.ic1, Var.x, Var.y, null);
+            } else if (moveright == true) {
+                g.drawImage(ic1, x, y, null);
             // TODO simpler
-            } else if (Var.donot == true) {
-                g.drawImage(Var.ic2, Var.x, Var.y, null);
+            } else if (donot == true) {
+                g.drawImage(ic2, x, y, null);
 
                 // TODO simpler
-            } else if (Var.down == true) {
-                g.drawImage(Var.ic5, Var.x, Var.y, null);
+            } else if (down == true) {
+                g.drawImage(ic5, x, y, null);
             }
 
 
@@ -69,76 +93,76 @@ public class Label extends JLabel {
 
             for (int i = 0; i <= 3; i++) {
                 // TODO simpler
-                if (Var.kontakt == true) {
-                    g.drawImage(Var.ig1t, Var.feindx[0] - 48, Var.feindy[0], null);
+                if (kontakt == true) {
+                    g.drawImage(ig1t, feindx[0] - 48, feindy[0], null);
 
                 } else {
-                    g.drawImage(Var.ig1, Var.feindx[0], Var.feindy[0], 110, 113, null);
+                    g.drawImage(ig1, feindx[0], feindy[0], 110, 113, null);
 
                 }
                 // TODO simpler
-                if (Var.kontakt1 == true) {
-                    g.drawImage(Var.ig1t, Var.feindx[1] - 48, Var.feindy[1], null);
+                if (kontakt1 == true) {
+                    g.drawImage(ig1t, feindx[1] - 48, feindy[1], null);
 
                 } else {
-                    g.drawImage(Var.ig1, Var.feindx[1], Var.feindy[1], 110, 113, null);
+                    g.drawImage(ig1, feindx[1], feindy[1], 110, 113, null);
 
                 }
                 // TODO simpler
-                if (Var.kontakt2 == true) {
-                    g.drawImage(Var.ig1t, Var.feindx[2] - 48, Var.feindy[2], null);
+                if (kontakt2 == true) {
+                    g.drawImage(ig1t, feindx[2] - 48, feindy[2], null);
 
                 } else {
-                    g.drawImage(Var.ig1, Var.feindx[2], Var.feindy[2], 110, 113, null);
+                    g.drawImage(ig1, feindx[2], feindy[2], 110, 113, null);
 
                 }
                 // TODO simpler
-                if (Var.kontakt3 == true) {
-                    g.drawImage(Var.ig1t, Var.feindx[3] - 48, Var.feindy[3], null);
+                if (kontakt3 == true) {
+                    g.drawImage(ig1t, feindx[3] - 48, feindy[3], null);
 
                 } else {
-                    g.drawImage(Var.ig1, Var.feindx[3], Var.feindy[3], 110, 113, null);
+                    g.drawImage(ig1, feindx[3], feindy[3], 110, 113, null);
                 }
 
 
                 g.setColor(Color.BLUE);
                 g.setFont(new Font("Comic Sans MS", Font.BOLD, 35));
-                g.drawString("Dosen: " + Var.Dosen, 25, 900);
+                g.drawString("Dosen: " + Dosen, 25, 900);
 
 
                 g.setColor(Color.green);
                 g.setFont(new Font("Arial", Font.BOLD, 35));
-                g.drawString("Leben: " + Var.Leben, 25, 950);
+                g.drawString("Leben: " + Leben, 25, 950);
 
             }
             // TODO simpler
-        } else if (Var.inPause == true) {
+        } else if (inPause == true) {
 
-            g.drawImage(Var.ib1, 0, Var.backgroundY1, null);
-            g.drawImage(Var.ib2, 0, Var.backgroundY2, null);
+            g.drawImage(ib1, 0, backgroundY1, null);
+            g.drawImage(ib2, 0, backgroundY2, null);
 
             for (int u = 0; u <= 6; u++) {
 
-                g.drawImage(Var.im3, Var.monyX[u], Var.monyY[u], 75, 55, null);
+                g.drawImage(im3, monyX[u], monyY[u], 75, 55, null);
             }
 
-            g.drawImage(Var.ic2, Var.x, Var.y, null);
+            g.drawImage(ic2, x, y, null);
 
             for (int i = 0; i <= 3; i++) {
 
-                g.drawImage(Var.ig1, Var.feindx[i], Var.feindy[i], null);
+                g.drawImage(ig1, feindx[i], feindy[i], null);
             }
 
             g.setColor(new Color(100, 100, 100, 128));
-            g.fillRect(0, 0, Var.screenwight, Var.screenhight);
+            g.fillRect(0, 0, screenwight, screenhight);
 
             // TODO simpler
-            if (Var.lose == true) {
+
                 // TODO simpler
-                if (Var.lose == true) {
+                if (lose == true) {
                     g.setColor(Color.BLUE);
                     g.setFont(new Font("Zapata", Font.BOLD, 35));
-                    g.drawString("Gesamelte Dosen: " + Var.Dosen, 120, 400);
+                    g.drawString("Gesamelte Dosen: " + Dosen, 120, 400);
 
 
                     g.setColor(Color.red);
@@ -146,12 +170,12 @@ public class Label extends JLabel {
                     g.drawString("Du hast Verloren", 100, 350);
 
                 }
-            }
+
 
             // TODO simpler
-        } else if (Var.inHauptmeü == true || Var.inOptionen == true || Var.inLaden == true) {
+        } else if (inHauptmeü == true || inOptionen == true || inLaden == true) {
 
-            g.drawImage(Var.ib3, 0, 0, null);
+            g.drawImage(ib3, 0, 0, null);
 
 
         }

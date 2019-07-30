@@ -3,12 +3,12 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Aktualisierung {
+public class Aktualisierung extends Var{
 
     Timer Aktualisirung;
 
-    // TODO kein static
-    static int tempAktualisirung = 0;
+    // TODO kein static *
+     int tempAktualisirung = 0;
 
     public Aktualisierung() {
 
@@ -18,19 +18,19 @@ public class Aktualisierung {
             @Override
             public void run() {
                 // TODO simpler
-                if (Var.inPause == true) {
+                if (inPause == true) {
 
                     if (tempAktualisirung == 0) {
 
-                        Var.btFortsetzen.requestFocus();
-                        Var.btNeuStard.requestFocus();
-                        Var.btOptionen.requestFocus();
-                        Var.btHauptmeü.requestFocus();
+                        btFortsetzen.requestFocus();
+                        btNeuStard.requestFocus();
+                        btOptionen.requestFocus();
+                        btHauptmeü.requestFocus();
                         tempAktualisirung++;
 
                     } else if (tempAktualisirung == 1) {
 
-                        Var.jfl.requestFocus();
+                       jfl.requestFocus();
 
                     }
                 }

@@ -3,10 +3,10 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class MoneySammeln {
+public class MoneySammeln extends Var{
 
     // TODO privat, da die Klasse MoneySammeln die Datenhoheit besitzt.
-    Timer Msameln;
+   private Timer Msameln;
 
     public MoneySammeln() {
 
@@ -17,14 +17,14 @@ public class MoneySammeln {
             public void run() {
 
                 // TODO simpler machen
-                if (Var.ingame == true) {
+                if (ingame == true) {
 
                     for (int i = 0; i <= 6; i++) {
 
-                        if (Var.x >= Var.monyX[i] - 75 && Var.x <= Var.monyX[i] + 75 && Var.y >= Var.monyY[i] - 50 && Var.y <= Var.monyY[i] + 50) {
+                        if (x >= monyX[i] - 75 && x <= monyX[i] + 75 && y >= monyY[i] - 50 && y <= monyY[i] + 50) {
 
-                            Var.Dosen += 1;
-                            Var.monyY[i] = -1590;
+                            Dosen += 1;
+                            monyY[i] = -1590;
 
                         }
                     }

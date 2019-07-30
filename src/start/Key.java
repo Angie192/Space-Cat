@@ -3,48 +3,48 @@ package start;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class Key implements KeyListener {
+public abstract class Key  extends Aktualisierung implements KeyListener {
 
     static int tempKeyhandler = 0;
 
-    public void keyTyped(KeyEvent e) {
-        // TODO logausgabe oder kommentar warum es leer ist
-    }
+    //public void keyTyped(KeyEvent e) {
+        // TODO logausgabe oder kommentar warum es leer ist*
+   // }
 
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_D || e.getKeyCode() == KeyEvent.VK_RIGHT) {
-            Var.moveright = true;
-            Var.donot = false;
+            moveright = true;
+            donot = false;
         }
 
         if (e.getKeyCode() == KeyEvent.VK_A || e.getKeyCode() == KeyEvent.VK_LEFT) {
-            Var.moveleft = true;
-            Var.donot = false;
+            moveleft = true;
+            donot = false;
         }
 
         if (e.getKeyCode() == KeyEvent.VK_W || e.getKeyCode() == KeyEvent.VK_UP) {
-            Var.jump = true;
-            Var.donot = false;
+            jump = true;
+            donot = false;
         }
 
         if (e.getKeyCode() == KeyEvent.VK_S || e.getKeyCode() == KeyEvent.VK_DOWN) {
-            Var.down = true;
-            Var.donot = false;
+            down = true;
+            donot = false;
         }
         // TODO simpler
-        if (Var.inHauptmeü == false) {
+        if (inHauptmeü == false) {
 
             if (tempKeyhandler == 0) {
 
                 //Pause
                 if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
 
-                    Var.ingame = false;
-                    Var.inPause = true;
-                    Var.btHauptmeü.setVisible(true);
-                    Var.btOptionen.setVisible(true);
-                    Var.btNeuStard.setVisible(true);
-                    Var.btFortsetzen.setVisible(true);
+                    ingame = false;
+                    inPause = true;
+                    btHauptmeü.setVisible(true);
+                    btOptionen.setVisible(true);
+                    btNeuStard.setVisible(true);
+                    btFortsetzen.setVisible(true);
                     tempKeyhandler++;
                 }
 
@@ -54,15 +54,15 @@ public class Key implements KeyListener {
 
                 if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
 
-                    Var.ingame = true;
-                    Var.inPause = false;
-                    Var.btHauptmeü.setVisible(false);
-                    Var.btOptionen.setVisible(false);
-                    Var.btNeuStard.setVisible(false);
-                    Var.btFortsetzen.setVisible(false);
+                    ingame = true;
+                    inPause = false;
+                    btHauptmeü.setVisible(false);
+                    btOptionen.setVisible(false);
+                    btNeuStard.setVisible(false);
+                    btFortsetzen.setVisible(false);
                     tempKeyhandler--;
 
-                    Aktualisierung.tempAktualisirung = 0;
+                    tempAktualisirung = 0;
                 }
 
 
@@ -75,20 +75,20 @@ public class Key implements KeyListener {
     @Override
     public void keyReleased(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_D || e.getKeyCode() == KeyEvent.VK_RIGHT)
-            Var.moveright = false;
-        Var.donot = true;
+            moveright = false;
+            donot = true;
 
         if (e.getKeyCode() == KeyEvent.VK_A || e.getKeyCode() == KeyEvent.VK_LEFT)
-            Var.moveleft = false;
-        Var.donot = true;
+            moveleft = false;
+            donot = true;
 
         if (e.getKeyCode() == KeyEvent.VK_W || e.getKeyCode() == KeyEvent.VK_UP)
-            Var.jump = false;
-        Var.donot = true;
+            jump = false;
+            donot = true;
 
         if (e.getKeyCode() == KeyEvent.VK_S || e.getKeyCode() == KeyEvent.VK_DOWN)
-            Var.down = false;
-        Var.donot = true;
+            down = false;
+            donot = true;
 
     }
 

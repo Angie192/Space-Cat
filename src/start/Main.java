@@ -9,9 +9,7 @@ public class Main {
         new Var();
         new Gui();
         // TODO unnötig
-        new Key();
         // TODO unnötig
-        new Label();
         new Back();
         new CatMove();
         new FeindMove();
@@ -20,9 +18,17 @@ public class Main {
         new MoneySammeln();
         new Verloren();
         // TODO unnötig
-        new ActionHandler();
-        new Aktualisierung();
 
+        new Aktualisierung();
+        new Buttonsfortsetzen();
+        new ButtonEnde();
+        new ButtonHaupmeü();
+        new ButtonLaden();
+        new ButtonNewStard();
+        new ButtonOptionen();
+        new ButtonOptionenhaupt();
+        new ButtonStard();
+        new ButtonSthum();
     }
 
 

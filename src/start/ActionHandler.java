@@ -3,137 +3,133 @@ package start;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ActionHandler implements ActionListener {
+public class ActionHandler extends Aktualisierung implements ActionListener {
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == Var.btFortsetzen) {
+        if (e.getSource() == btFortsetzen) {
 
-            Var.ingame = true;
-            Var.inPause = false;
-            Var.inLaden = false;
-            Var.inOptionen = false;
-            Var.inHauptmeü = false;
-            Var.btHauptmeü.setVisible(false);
-            Var.btOptionen.setVisible(false);
-            Var.btNeuStard.setVisible(false);
-            Var.btFortsetzen.setVisible(false);
-            Var.btBenden.setVisible(false);
-            Var.btLaden.setVisible(false);
-            Var.btStart.setVisible(false);
-            Var.btShtum.setVisible(false);
-            Var.btOptionenHaupt.setVisible(false);
+           ingame = true;
+            inPause = false;
+            inLaden = false;
+            inOptionen = false;
+            inHauptmeü = false;
+            btHauptmeü.setVisible(false);
+            btOptionen.setVisible(false);
+            btNeuStard.setVisible(false);
+            btFortsetzen.setVisible(false);
+            btBenden.setVisible(false);
+            btLaden.setVisible(false);
+            btStart.setVisible(false);
+            btShtum.setVisible(false);
+            btOptionenHaupt.setVisible(false);
 
-            Aktualisierung.tempAktualisirung = 0;
+            tempAktualisirung = 0;
             Key.tempKeyhandler = 0;
 
-            Var.jfl.requestFocus();
+            jfl.requestFocus();
 
-        } else if (e.getSource() == Var.btNeuStard) {
+        } else if (e.getSource() == btNeuStard) {
 
-            Var.ingame = true;
-            Var.neustard = true;
-            Var.inPause = false;
-            Var.inLaden = false;
-            Var.inOptionen = false;
-            Var.inHauptmeü = false;
-            Var.btHauptmeü.setVisible(false);
-            Var.btOptionen.setVisible(false);
-            Var.btNeuStard.setVisible(false);
-            Var.btFortsetzen.setVisible(false);
-            Var.btBenden.setVisible(false);
-            Var.btLaden.setVisible(false);
-            Var.btStart.setVisible(false);
-            Var.btShtum.setVisible(false);
-            Var.btOptionenHaupt.setVisible(false);
+            ingame = true;
+            neustard = true;
+            inPause = false;
+            inLaden = false;
+            inOptionen = false;
+            inHauptmeü = false;
+            btHauptmeü.setVisible(false);
+            btOptionen.setVisible(false);
+            btNeuStard.setVisible(false);
+            btFortsetzen.setVisible(false);
+            btBenden.setVisible(false);
+            btLaden.setVisible(false);
+            btStart.setVisible(false);
+            btShtum.setVisible(false);
+            btOptionenHaupt.setVisible(false);
 
-            Aktualisierung.tempAktualisirung = 0;
+            tempAktualisirung = 0;
             Key.tempKeyhandler = 0;
 
-            Var.jfl.requestFocus();
+            jfl.requestFocus();
 
-        } else if (e.getSource() == Var.btOptionen) {
+        } else if (e.getSource() == btOptionen) {
 
-            Var.inPause = false;
-            Var.inLaden = false;
-            Var.inOptionen = true;
-            Var.inHauptmeü = false;
-            Var.ingame = false;
-            Var.btBenden.setVisible(false);
-            Var.btLaden.setVisible(false);
-            Var.btStart.setVisible(false);
-            Var.btNeuStard.setVisible(false);
-            Var.btFortsetzen.setVisible(false);
-            Var.btHauptmeü.setVisible(false);
-            Var.btOptionen.setVisible(false);
-            Var.btShtum.setVisible(false);
-            Var.btOptionenHaupt.setVisible(false);
+            inPause = false;
+            inLaden = false;
+            inOptionen = true;
+            inHauptmeü = false;
+            ingame = false;
+            btBenden.setVisible(false);
+            btLaden.setVisible(false);
+            btStart.setVisible(false);
+            btNeuStard.setVisible(false);
+            btFortsetzen.setVisible(false);
+            btHauptmeü.setVisible(false);
+            btOptionen.setVisible(false);
+            btShtum.setVisible(false);
+            btOptionenHaupt.setVisible(false);
 // TODO simpler
-        } else if (e.getSource() == Var.btHauptmeü || Var.inHauptmeü == true) {
+        } else if (e.getSource() == btHauptmeü ||inHauptmeü == true) {
 
-            Var.inLaden = false;
-            Var.inOptionen = false;
-            Var.inHauptmeü = true;
-            Var.ingame = false;
-            Var.inPause = false;
-            Var.btBenden.setVisible(true);
-            Var.btLaden.setVisible(true);
-            Var.btStart.setVisible(true);
-            Var.btNeuStard.setVisible(false);
-            Var.btFortsetzen.setVisible(false);
-            Var.btHauptmeü.setVisible(false);
-            Var.btOptionen.setVisible(true);
-            Var.btShtum.setVisible(false);
-            Var.btOptionenHaupt.setVisible(true);
+            inLaden = false;
+            inOptionen = false;
+            inHauptmeü = true;
+            ingame = false;
+            inPause = false;
+            btBenden.setVisible(true);
+            btLaden.setVisible(true);
+            btStart.setVisible(true);
+            btNeuStard.setVisible(false);
+            btFortsetzen.setVisible(false);
+            btHauptmeü.setVisible(false);
+            btOptionen.setVisible(true);
+            btShtum.setVisible(false);
+            btOptionenHaupt.setVisible(true);
 
-            if (e.getSource() == Var.btStart) {
+            if (e.getSource() == btStart) {
 
-                Var.ingame = true;
-                Var.inPause = false;
-                Var.inLaden = false;
-                Var.inOptionen = false;
-                Var.inHauptmeü = false;
-                Var.btHauptmeü.setVisible(false);
-                Var.btOptionen.setVisible(false);
-                Var.btNeuStard.setVisible(false);
-                Var.btFortsetzen.setVisible(false);
-                Var.btBenden.setVisible(false);
-                Var.btLaden.setVisible(false);
-                Var.btStart.setVisible(false);
-                Var.btShtum.setVisible(false);
-                Var.btOptionenHaupt.setVisible(false);
+                ingame = true;
+                inPause = false;
+                inLaden = false;
+                inOptionen = false;
+                inHauptmeü = false;
+                btHauptmeü.setVisible(false);
+                btOptionen.setVisible(false);
+                btNeuStard.setVisible(false);
+                btFortsetzen.setVisible(false);
+                btBenden.setVisible(false);
+                btLaden.setVisible(false);
+                btStart.setVisible(false);
+                btShtum.setVisible(false);
+                btOptionenHaupt.setVisible(false);
 
-                Aktualisierung.tempAktualisirung = 0;
+                tempAktualisirung = 0;
                 Key.tempKeyhandler = 0;
 
-                Var.jfl.requestFocus();
+                jfl.requestFocus();
 
-            } else if (e.getSource() == Var.btOptionenHaupt) {
+            } else if (e.getSource() ==btOptionenHaupt) {
 
-                Var.ingame = false;
-                Var.inPause = false;
-                Var.inLaden = false;
-                Var.inOptionen = true;
-                Var.inHauptmeü = false;
-                Var.btHauptmeü.setVisible(true);
-                Var.btOptionen.setVisible(false);
-                Var.btNeuStard.setVisible(false);
-                Var.btFortsetzen.setVisible(false);
-                Var.btBenden.setVisible(false);
-                Var.btLaden.setVisible(false);
-                Var.btStart.setVisible(false);
-                Var.btShtum.setVisible(true);
-                Var.btOptionenHaupt.setVisible(false);
+                ingame = false;
+                inPause = false;
+                inLaden = false;
+                inOptionen = true;
+                inHauptmeü = false;
+                btHauptmeü.setVisible(true);
+                btOptionen.setVisible(false);
+                btNeuStard.setVisible(false);
+                btFortsetzen.setVisible(false);
+                btBenden.setVisible(false);
+                btLaden.setVisible(false);
+                btStart.setVisible(false);
+                btShtum.setVisible(true);
+                btOptionenHaupt.setVisible(false);
 
-                // TODO weg
-                if (e.getSource() == Var.btShtum) {
+                // TODO weg*
 
-                }
-// TODO weg
-            } else if (e.getSource() == Var.btLaden) {
-
-            } else if (e.getSource() == Var.btBenden) {
+// TODO weg*
+            } else if (e.getSource() == btBenden) {
                 System.exit(0);
 
             }

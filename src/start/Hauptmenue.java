@@ -1,17 +1,17 @@
 package start;
 
-public class Hauptmenue {
+public class Hauptmenue extends Var{
 
     public Hauptmenue() {
         // TODO simpler
-        if (Var.inHauptmeü == true) {
+        if (inHauptmeü == true) {
 
-            Var.btStart.requestFocus();
-            Var.btBenden.requestFocus();
-            Var.btLaden.requestFocus();
-            Var.btStart.setVisible(true);
+            btStart.requestFocus();
+            btBenden.requestFocus();
+            btLaden.requestFocus();
+            btStart.setVisible(true);
 
-        } else Var.jfl.requestFocus();
+        } else jfl.requestFocus();
 
 
     }

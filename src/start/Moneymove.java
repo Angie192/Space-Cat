@@ -3,18 +3,18 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Moneymove {
+public class Moneymove extends Var{
 
     // TODO privat, da die Klasse Moneymove die Datenhoheit besitzt.
-    Timer Monymove;
+    private Timer Monymove;
     private int temp = 0;
 
 
     public Moneymove() {
 
         for (int u = 0; u <= 6; u++) {
-            Var.monyX[u] = 40 + temp;
-            Var.monyY[u] = -660 + temp;
+            monyX[u] = 40 + temp;
+            monyY[u] = -660 + temp;
 
             temp += 100;
 
@@ -26,38 +26,38 @@ public class Moneymove {
             public void run() {
 
                 // TODO simpler
-                if (Var.ingame == true) {
+                if (ingame == true) {
 
                     for (int u = 0; u <= 6; u++) {
 
-                        Var.monyY[0] += Var.monyspeed[0];
+                        monyY[0] += monyspeed[0];
 
-                        if (Var.monyY[0] >= Var.screenhight) {
-                            Var.monyY[0] = -1000;
+                        if (monyY[0] >= screenhight) {
+                            monyY[0] = -1000;
                         }
-                        Var.monyY[1] += Var.monyspeed[1];
-                        if (Var.monyY[1] >= Var.screenhight) {
-                            Var.monyY[1] = -1000;
+                        monyY[1] += monyspeed[1];
+                        if (monyY[1] >= screenhight) {
+                            monyY[1] = -1000;
                         }
-                        Var.monyY[2] += Var.monyspeed[2];
-                        if (Var.monyY[2] >= Var.screenhight) {
-                            Var.monyY[2] = -1000;
+                        monyY[2] += monyspeed[2];
+                        if (monyY[2] >= screenhight) {
+                            monyY[2] = -1000;
                         }
-                        Var.monyY[3] += Var.monyspeed[3];
-                        if (Var.monyY[3] >= Var.screenhight) {
-                            Var.monyY[3] = -1000;
+                        monyY[3] += monyspeed[3];
+                        if (monyY[3] >= screenhight) {
+                            monyY[3] = -1000;
                         }
-                        Var.monyY[4] += Var.monyspeed[4];
-                        if (Var.monyY[4] >= Var.screenhight) {
-                            Var.monyY[4] = -1000;
+                        monyY[4] += monyspeed[4];
+                        if (monyY[4] >= screenhight) {
+                            monyY[4] = -1000;
                         }
-                        Var.monyY[5] += Var.monyspeed[5];
-                        if (Var.monyY[5] >= Var.screenhight) {
-                            Var.monyY[5] = -1000;
+                        monyY[5] += monyspeed[5];
+                        if (monyY[5] >= screenhight) {
+                            monyY[5] = -1000;
                         }
-                        Var.monyY[6] += Var.monyspeed[6];
-                        if (Var.monyY[6] >= Var.screenhight) {
-                            Var.monyY[6] = -1000;
+                        monyY[6] += monyspeed[6];
+                        if (monyY[6] >= screenhight) {
+                            monyY[6] = -1000;
                         }
                     }
                 }

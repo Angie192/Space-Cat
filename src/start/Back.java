@@ -3,7 +3,7 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Back {
+public class Back extends Var{
     Timer background;
 
     public Back() {
@@ -13,20 +13,20 @@ public class Back {
             @Override
             public void run() {
                 // TODO simpler
-                if (Var.ingame == true) {
+                if (ingame ==true) {
 
-                    if (Var.backgroundY1 < 3995) {
-                        Var.backgroundY1 += 2;
+                    if (backgroundY1 < 3995) {
+                        backgroundY1 += 2;
                     } else {
-                        Var.backgroundY1 = -3995;
+                        backgroundY1 = -3995;
                     }
-                    if (Var.backgroundY2 < 3995) {
-                        Var.backgroundY2 += 2;
+                    if (backgroundY2 < 3995) {
+                        backgroundY2 += 2;
                     } else {
-                        Var.backgroundY2 = -3995;
+                        backgroundY2 = -3995;
                     }
                 }
             }
-        }, 0, Var.backgroundspeed);
+        }, 0, backgroundspeed);
     }
 }
