@@ -8,7 +8,7 @@ import java.awt.event.KeyEvent;
 
 public class Gui extends JFrame{
 
-    public Gui() {
+    public Gui(final Config config) {
 
 
         new Back();

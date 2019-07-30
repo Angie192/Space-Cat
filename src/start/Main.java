@@ -4,16 +4,12 @@ import java.io.ObjectInputFilter;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
 
-        new Config();
+        final Config config = new Config();
 
-        Config(){
-
-
-        }        // TODO Config über Konstruktur an Gui übergeben
-
+        // TODO Config über Konstruktur an Gui übergeben
         new Gui();
 
     }

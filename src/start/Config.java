@@ -15,6 +15,7 @@ public class Config {
     public Config() {
         try {
 
+            // FIXME die bilder werden nun ins leere gelesen... die Bilder sollen in attribute innerhalb der config gespeichert werden
             //Backgreund
             ImageIO.read(new File("rsc/Wa.png"));
             ImageIO.read(new File("rsc/Wa.png"));
