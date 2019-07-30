@@ -26,8 +26,8 @@ public class Gui extends JFrame{
         new LadenButton();
         new NeuStartButton();
         new OptionenButton();
-        new ButtonOptionenhaupt();
-        new ButtonStard();
+        new OptionenHauptButton();
+        new StartButton();
         new SthumButton();
 
         Label label1;

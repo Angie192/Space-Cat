@@ -2,6 +2,7 @@ package start;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -15,30 +16,34 @@ public class Config {
     public Config() {
         try {
 
-            // FIXME die bilder werden nun ins leere gelesen... die Bilder sollen in attribute innerhalb der config gespeichert werden
+         Image ib1, ib2, ib3, ic1, ic2, ic3, ic4, ic5 ,ic6, ic7, ic8, ic9, ic10, ig1, ig1tot, im1;
+
+
             //Backgreund
-            ImageIO.read(new File("rsc/Wa.png"));
-            ImageIO.read(new File("rsc/Wa.png"));
-            ImageIO.read(new File("rsc/H.png"));
+
+            ib1 = ImageIO.read(new File("rsc/Wa.png"));
+            ib2 = ImageIO.read(new File("rsc/Wa.png"));
+            ib3 = ImageIO.read(new File("rsc/H.png"));
 
             //Lissi
-            ImageIO.read(new File("rsc/Cat 1.png"));
-            ImageIO.read(new File("rsc/Cat 2.png"));
-            ImageIO.read(new File("rsc/Cat 3.png"));
-            ImageIO.read(new File("rsc/cat up.png"));
-            ImageIO.read(new File("rsc/cat down.png"));
-            ImageIO.read(new File("rsc/Cat AW.png"));
-            ImageIO.read(new File("rsc/Cat WD.png"));
-            ImageIO.read(new File("rsc/Cat SD.png"));
-            ImageIO.read(new File("rsc/Cat SA.png"));
-            ImageIO.read(new File("rsc/Aua.png"));
+            ic1 = ImageIO.read(new File("rsc/Cat 1.png"));
+            ic2 = ImageIO.read(new File("rsc/Cat 2.png"));
+            ic3 = ImageIO.read(new File("rsc/Cat 3.png"));
+            ic4 = ImageIO.read(new File("rsc/cat up.png"));
+            ic5 = ImageIO.read(new File("rsc/cat down.png"));
+            ic6 = ImageIO.read(new File("rsc/Cat AW.png"));
+            ic7 = ImageIO.read(new File("rsc/Cat WD.png"));
+            ic8 = ImageIO.read(new File("rsc/Cat SD.png"));
+            ic9 = ImageIO.read(new File("rsc/Cat SA.png"));
+            ic10 = ImageIO.read(new File("rsc/Aua.png"));
 
             //Gegner
 
-            ImageIO.read(new File("rsc/G1.png"));
-            ImageIO.read(new File("rsc/G1tot.png"));
+            ig1 = ImageIO.read(new File("rsc/G1.png"));
+            ig1tot = ImageIO.read(new File("rsc/G1tot.png"));
+
             //Mony
-            ImageIO.read(new File("rsc/M3.png"));
+            im1 = ImageIO.read(new File("rsc/M3.png"));
 
 
         } catch (IOException e) {

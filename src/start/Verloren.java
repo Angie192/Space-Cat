@@ -17,8 +17,6 @@ public class Verloren {
           private Verloren() {
 
                 verloren= new Timer();
-
-
                 verloren.scheduleAtFixedRate(new TimerTask() {
 
                     @Override
