@@ -3,7 +3,7 @@ package start;
 public class Hauptmenue extends Var{
 
     public Hauptmenue() {
-        // TODO simpler
+
         if (inHauptmeü) {
 
             btStart.requestFocus();

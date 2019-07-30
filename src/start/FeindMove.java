@@ -23,7 +23,7 @@ public class FeindMove extends Var {
 
             @Override
             public void run() {
-                // TODO simpler
+
                 if (ingame ) {
 
                     for (int i = 0; i <= 3; i++) {

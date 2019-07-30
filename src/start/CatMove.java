@@ -13,16 +13,16 @@ public class CatMove extends Var {
 
             public void run() {
 
-                // TODO simpler
+
                 if (ingame) {
 
-                    // TODO simpler
+
                     if (moveright) {
                         if (x < 610) {
                             x += movespeed;
 
                         }
-                        // TODO simpler
+
                     } else if (moveleft) {
                         if (x > 0) {
                             x -= movespeed;
@@ -30,14 +30,14 @@ public class CatMove extends Var {
                         }
                     }
 
-                    // TODO simpler
+
                     if (jump) {
                         if (y > 0) {
                             y -= jumpspeed;
                             //System.out.println(Var.y);
                         }
 
-                    // TODO simpler
+
                     } else if (down) {
                         if (y < 839) {
                             y += jumpspeed;

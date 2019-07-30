@@ -69,7 +69,7 @@ public class ActionHandler extends Aktualisierung implements ActionListener {
             btOptionen.setVisible(false);
             btShtum.setVisible(false);
             btOptionenHaupt.setVisible(false);
-// TODO simpler
+
         } else if (e.getSource() == btHauptmeü ||inHauptmeü) {
 
             inLaden = false;
@@ -126,9 +126,9 @@ public class ActionHandler extends Aktualisierung implements ActionListener {
                 btShtum.setVisible(true);
                 btOptionenHaupt.setVisible(false);
 
-                // TODO weg*
 
-// TODO weg*
+
+
             } else if (e.getSource() == btBenden) {
                 System.exit(0);
 

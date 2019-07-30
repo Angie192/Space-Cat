@@ -5,7 +5,7 @@ import java.util.TimerTask;
 
 public class Verloren extends Var{
 
-    // TODO privat, da die Klasse Verloren die Datenhoheit besitzt.
+
     Timer Verloren;
 
     private int temp = 0, temp1 = 0, temp2 = 0;
@@ -21,7 +21,7 @@ public class Verloren extends Var{
             @Override
             public void run() {
 
-                // TODO simpler schreiben
+
                 if (lose) {
 
                     if (temp >= 0 && temp <= 55) {

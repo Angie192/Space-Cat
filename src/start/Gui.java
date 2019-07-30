@@ -5,12 +5,12 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 
 
-// TODO Gui von JFrame erben lassen
+
 public class Gui extends JFrame{
 
     public Gui() {
 
-        // TODO da Gui nun von JFrame erbt, müssen die Eigenschaften anderes gesetzt werden
+
 
         JFrame jfl;
         Label label1;

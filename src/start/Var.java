@@ -11,28 +11,11 @@ import java.io.IOException;
 public class Var extends Label{
 
         JFrame jfl;
-    // TODO muss nicht statisch sein*
 
-
-    // TODO muss nicht statisch sein*
-
-
-
-    // TODO muss nicht statisch sein*
-
-    // TODO muss nicht statisch sein*
     JButton btShtum;
-    // TODO muss nicht statisch sein*
+
     JButton btStart, btBenden, btLaden, btOptionenHaupt;
     JButton btNeuStard, btFortsetzen, btOptionen, btHauptmeü;
-
-    // TODO muss nicht statisch sein*
-
-    // TODO muss nicht statisch sein*
-
-    // TODO muss nicht statisch sein*
-
-    // TODO muss nicht statisch sein*
 
 
     public Var() {

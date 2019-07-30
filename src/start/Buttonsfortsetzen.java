@@ -6,7 +6,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 
-// TODO mehrere button klassen erstellen (btFortsetzen, btNeustart, btOptionen, btMenu, btStart, btBeenden, btLaden, bt...)
+
 public class Buttonsfortsetzen extends Var {
 
 

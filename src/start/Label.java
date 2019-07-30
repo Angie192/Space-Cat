@@ -38,7 +38,7 @@ public class Label extends JLabel {
 
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-        // TODO simpler
+
         if (ingame) {
 
             g.drawImage(ib1, 0, backgroundY1, null);
@@ -55,35 +55,35 @@ public class Label extends JLabel {
 
 
             // Lissi
-            // TODO simpler
+
             if (kontakt || kontakt1 || kontakt2 || kontakt3) {
                 g.drawImage(ic10, x - 20, y, null);
-            // TODO simpler
+
             } else if (moveleft && jump) {
                 g.drawImage(ic6, x, y, null);
-            // TODO simpler
+
             } else if (jump && moveright ) {
                 g.drawImage(ic7, x, y, null);
-            // TODO simpler
+
             } else if (down && moveright) {
                 g.drawImage(ic8, x, y, null);
-            // TODO simpler
+
             } else if (down && moveleft) {
                 g.drawImage(ic9, x, y, null);
-            // TODO simpler
+
             } else if (moveleft) {
                 g.drawImage(ic3, x, y, null);
-            // TODO simpler
+
             } else if (jump) {
                 g.drawImage(ic4, x, y, null);
-            // TODO simpler
+
             } else if (moveright) {
                 g.drawImage(ic1, x, y, null);
-            // TODO simpler
+
             } else if (donot) {
                 g.drawImage(ic2, x, y, null);
 
-                // TODO simpler
+
             } else if (down) {
                 g.drawImage(ic5, x, y, null);
             }
@@ -92,7 +92,7 @@ public class Label extends JLabel {
             // Gegener
 
             for (int i = 0; i <= 3; i++) {
-                // TODO simpler
+
                 if (kontakt) {
                     g.drawImage(ig1t, feindx[0] - 48, feindy[0], null);
 
@@ -100,7 +100,7 @@ public class Label extends JLabel {
                     g.drawImage(ig1, feindx[0], feindy[0], 110, 113, null);
 
                 }
-                // TODO simpler
+
                 if (kontakt1) {
                     g.drawImage(ig1t, feindx[1] - 48, feindy[1], null);
 
@@ -108,7 +108,7 @@ public class Label extends JLabel {
                     g.drawImage(ig1, feindx[1], feindy[1], 110, 113, null);
 
                 }
-                // TODO simpler
+
                 if (kontakt2) {
                     g.drawImage(ig1t, feindx[2] - 48, feindy[2], null);
 
@@ -116,7 +116,7 @@ public class Label extends JLabel {
                     g.drawImage(ig1, feindx[2], feindy[2], 110, 113, null);
 
                 }
-                // TODO simpler
+
                 if (kontakt3) {
                     g.drawImage(ig1t, feindx[3] - 48, feindy[3], null);
 
@@ -135,7 +135,7 @@ public class Label extends JLabel {
                 g.drawString("Leben: " + Leben, 25, 950);
 
             }
-            // TODO simpler
+
         } else if (inPause) {
 
             g.drawImage(ib1, 0, backgroundY1, null);
@@ -156,9 +156,7 @@ public class Label extends JLabel {
             g.setColor(new Color(100, 100, 100, 128));
             g.fillRect(0, 0, screenwight, screenhight);
 
-            // TODO simpler
 
-                // TODO simpler
                 if (lose ) {
                     g.setColor(Color.BLUE);
                     g.setFont(new Font("Zapata", Font.BOLD, 35));
@@ -172,7 +170,7 @@ public class Label extends JLabel {
                 }
 
 
-            // TODO simpler
+
         } else if (inHauptmeü || inOptionen || inLaden ) {
 
             g.drawImage(ib3, 0, 0, null);

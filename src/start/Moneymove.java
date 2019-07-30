@@ -5,7 +5,7 @@ import java.util.TimerTask;
 
 class Moneymove extends Var{
 
-    // TODO privat, da die Klasse Moneymove die Datenhoheit besitzt.
+
     private Timer Monymove;
     private int temp = 0;
 
@@ -25,7 +25,7 @@ class Moneymove extends Var{
             @Override
             public void run() {
 
-                // TODO simpler
+
                 if (ingame) {
 
                     for (int u = 0; u <= 6; u++) {

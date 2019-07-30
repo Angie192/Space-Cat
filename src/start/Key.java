@@ -7,9 +7,6 @@ public abstract class Key  extends Aktualisierung implements KeyListener {
 
     static int tempKeyhandler = 0;
 
-    //public void keyTyped(KeyEvent e) {
-        // TODO logausgabe oder kommentar warum es leer ist*
-   // }
 
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_D || e.getKeyCode() == KeyEvent.VK_RIGHT) {
@@ -31,7 +28,7 @@ public abstract class Key  extends Aktualisierung implements KeyListener {
             down = true;
             donot = false;
         }
-        // TODO simpler
+
         if (inHauptmeü) {
 
             if (tempKeyhandler == 0) {

@@ -7,7 +7,7 @@ public class Aktualisierung extends Var{
 
     Timer Aktualisirung;
 
-    // TODO kein static *
+
      int tempAktualisirung = 0;
 
     public Aktualisierung() {
@@ -17,7 +17,7 @@ public class Aktualisierung extends Var{
         Aktualisirung.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                // TODO simpler
+
                 if (inPause) {
 
                     if (tempAktualisirung == 0) {

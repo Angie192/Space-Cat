@@ -12,7 +12,7 @@ public class Back extends Var{
 
             @Override
             public void run() {
-                // TODO simpler
+
                 if (ingame) {
 
                     if (backgroundY1 < 3995) {
