@@ -5,6 +5,9 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+// FIXME Datei ordentlich formatieren
+
+// FIXME nicht von Var erben
 public class ButtonEnde extends Var {
 
 public ButtonEnde() {

@@ -7,21 +7,25 @@ import java.io.File;
 import java.io.IOException;
 
 
-
+// FIXME nicht von Label erben
+// TODO Umbenennen zu Config
 public class Var extends Label{
 
+    // TODO BEGIN alle Attribute entfernen
         JFrame jfl;
 
     JButton btShtum;
 
     JButton btStart, btBenden, btLaden, btOptionenHaupt;
     JButton btNeuStard, btFortsetzen, btOptionen, btHauptmeü;
+    // TODO ENDE
 
 
     public Var() {
         try {
 
             //Backgreund
+            // TODO BEGIN
             ib1 = ImageIO.read(new File("rsc/Wa.png"));
             ib2 = ImageIO.read(new File("rsc/Wa.png"));
             ib3 = ImageIO.read(new File("rsc/H.png"));
@@ -44,7 +48,7 @@ public class Var extends Label{
             ig1t = ImageIO.read(new File("rsc/G1tot.png"));
             //Mony
             im3 = ImageIO.read(new File("rsc/M3.png"));
-
+            // TODO ENDE als Attribute der aktuellen Klasse setzen
 
         } catch (IOException e) {
             e.printStackTrace();

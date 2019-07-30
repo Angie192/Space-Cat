@@ -6,10 +6,12 @@ public class Main {
 
 
 
+        // TODO Config var erstellen
         new Var();
+        // TODO Config über Konstruktur an Gui übergeben
         new Gui();
 
-
+        // TODO BEGIN alle Objekte in Gui erzeugen
         new Back();
         new CatMove();
         new FeindMove();
@@ -28,6 +30,8 @@ public class Main {
         new ButtonOptionenhaupt();
         new ButtonStard();
         new ButtonSthum();
+
+        // TODO ENDE
     }
 
 

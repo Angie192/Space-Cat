@@ -3,6 +3,9 @@ package start;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+// FIXME Datei ordentlich formatieren
+
+// FIXME nicht von Aktualisierung erben
 public abstract class Key  extends Aktualisierung implements KeyListener {
 
     static int tempKeyhandler = 0;

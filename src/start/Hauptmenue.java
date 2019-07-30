@@ -1,5 +1,8 @@
 package start;
 
+// FIXME Datei ordentlich formatieren
+
+// FIXME nicht von Var erben
 public class Hauptmenue extends Var{
 
     public Hauptmenue() {

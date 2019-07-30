@@ -3,7 +3,11 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
+// FIXME Datei ordentlich formatieren
+
+// FIXME nicht von Var erben
 public class FeindKontakt extends Var{
+    // TODO sichtbarkeit beachten
     Timer Fkontakt;
     private int temp = 0, temp1 = 0, temp2 = 0, temp3 = 0;
 

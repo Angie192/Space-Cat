@@ -3,6 +3,9 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
+// FIXME Datei ordentlich formatieren
+
+// FIXME nicht von Var erben
 class Moneymove extends Var{
 
 

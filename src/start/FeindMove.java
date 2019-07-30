@@ -4,6 +4,9 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
+// FIXME Datei ordentlich formatieren
+
+// FIXME nicht von Var erben
 public class FeindMove extends Var {
     Timer gmove;
     private int temp = 0;

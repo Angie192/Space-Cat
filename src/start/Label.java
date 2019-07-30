@@ -22,11 +22,12 @@ public class Label extends JLabel {
     int Dosen = 0, Leben = 3, maxLeben = 5;
 
 
-
+    // TODO BEGIN Attribute entfernen
     BufferedImage ib1, ib2, ib3;
     BufferedImage ic1, ic2, ic3, ic4, ic5, ic6, ic7, ic8, ic9, ic10;
     BufferedImage ig1, ig1t;
     BufferedImage im3;
+    // TODO ENDE
 
     private static final long serialVersionUID = 1L;
 

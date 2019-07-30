@@ -3,6 +3,7 @@ package start;
 import java.util.Timer;
 import java.util.TimerTask;
 
+// FIXME nicht von Var erben
 public class Aktualisierung extends Var{
 
     Timer Aktualisirung;
