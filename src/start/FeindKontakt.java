@@ -5,11 +5,11 @@ import java.util.TimerTask;
 
 
 public class FeindKontakt {
-    // TODO sichtbarkeit beachten
-    Timer Fkontakt;
+
+    private Timer Fkontakt;
     private int temp = 0, temp1 = 0, temp2 = 0, temp3 = 0;
 
-    public FeindKontakt() {
+      public FeindKontakt() {
 
                 Fkontakt = new Timer();
                 Fkontakt.scheduleAtFixedRate(new TimerTask() {

@@ -13,8 +13,8 @@ public abstract class Main {
 
         }
 
-        // TODO Config über Konstruktur an Gui übergeben
-    new Gui(config);
+
+        new Gui(config);
 
 
 

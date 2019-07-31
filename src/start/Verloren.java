@@ -8,9 +8,8 @@ import java.util.TimerTask;
 
 public class Verloren {
 
-    // TODO Sichtbarkeit beachten
 
-    Timer verloren;
+    private Timer verloren;
 
     private int temp = 0, temp1 = 0, temp2 = 0;
 
