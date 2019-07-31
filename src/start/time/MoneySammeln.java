@@ -1,7 +1,6 @@
-package start;
+package start.time;
 
-
-public class MoneySammeln extends Back.AbstractTimeHandler {
+public class MoneySammeln extends AbstractTimeHandler {
 
     public MoneySammeln() {
         super(0, 10);

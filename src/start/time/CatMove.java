@@ -1,7 +1,6 @@
-package start;
+package start.time;
 
-
-public class CatMove extends Back.AbstractTimeHandler {
+public class CatMove extends AbstractTimeHandler {
 
 
     public CatMove() {

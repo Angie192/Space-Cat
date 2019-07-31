@@ -1,7 +1,6 @@
-package start;
+package start.time;
 
-
-public class Verloren extends Back.AbstractTimeHandler {
+public class Verloren extends AbstractTimeHandler {
 
 
     private int temp = 0, temp1 = 0, temp2 = 0;

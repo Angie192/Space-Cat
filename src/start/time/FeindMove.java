@@ -1,7 +1,6 @@
-package start;
+package start.time;
 
-
-public class FeindMove extends Back.AbstractTimeHandler {
+public class FeindMove extends AbstractTimeHandler {
 
     private int temp = 0;
 

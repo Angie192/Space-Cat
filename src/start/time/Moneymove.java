@@ -1,7 +1,6 @@
-package start;
+package start.time;
 
-
-class Moneymove extends Back.AbstractTimeHandler {
+class Moneymove extends AbstractTimeHandler {
 
     private int temp = 0;
 
