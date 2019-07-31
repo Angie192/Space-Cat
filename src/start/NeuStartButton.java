@@ -6,12 +6,10 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 
-
-
 public class NeuStartButton {
 
 
-public NeuStartButton() {
+    public NeuStartButton() {
 
         //Neu Stard
         btNeuStard = new JButton();
@@ -27,7 +25,7 @@ public NeuStartButton() {
             @Override
             public void mouseEntered(MouseEvent e) {
 
-               btNeuStard.setBounds(300, 380, 150, 50);
+                btNeuStard.setBounds(300, 380, 150, 50);
 
             }
 

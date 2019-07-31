@@ -5,26 +5,26 @@ public class Aktualisierung extends AbstractTimeHandler {
     private int tempAktualisirung = 0;
 
     public Aktualisierung() {
-      super(0, 15);
+        super(0, 15);
     }
-     
+
     protected void handle() {
-     if (inPause) {
-              if (tempAktualisirung == 0) {
+        if (inPause) {
+            if (tempAktualisirung == 0) {
 
-                  btFortsetzen.requestFocus();
-                  btNeuStard.requestFocus();
-                  btOptionen.requestFocus();
-                  btHauptmeü.requestFocus();
-                  tempAktualisirung++;
+                btFortsetzen.requestFocus();
+                btNeuStard.requestFocus();
+                btOptionen.requestFocus();
+                btHauptmeü.requestFocus();
+                tempAktualisirung++;
 
-              } else if (tempAktualisirung == 1) {
+            } else if (tempAktualisirung == 1) {
 
-                  fenster.requestFocus();
+                fenster.requestFocus();
 
-              }
+            }
 
-      }
+        }
     }
 
 }

@@ -5,8 +5,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 
 
-
-public class Gui extends JFrame{
+public class Gui extends JFrame {
 
     public Gui(final Config config) {
 

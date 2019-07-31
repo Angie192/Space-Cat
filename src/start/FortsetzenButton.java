@@ -6,11 +6,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 
-// FIXME Datei ordentlich formatieren
-
-// FIXME nicht von Var erben
-// FIXME camelCase schreibweise
-public class FortsetzenButton extends Var {
+public class FortsetzenButton {
 
 
     public FortsetzenButton() {
@@ -29,7 +25,7 @@ public class FortsetzenButton extends Var {
             @Override
             public void mouseEntered(MouseEvent e) {
 
-               btFortsetzen.setBounds(300, 300, 150, 50);
+                btFortsetzen.setBounds(300, 300, 150, 50);
 
             }
 
@@ -42,20 +38,6 @@ public class FortsetzenButton extends Var {
 
         });
         jfl.add(btFortsetzen);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

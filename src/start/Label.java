@@ -20,7 +20,7 @@ public class Label extends JLabel {
     int feindspeed[] = new int[4];
     int monyX[] = new int[7], monyY[] = new int[7], monyspeed[] = new int[7];
     int Dosen = 0, Leben = 3, maxLeben = 5;
-
++
 
     private static final long serialVersionUID = 1L;
 
@@ -56,7 +56,7 @@ public class Label extends JLabel {
             } else if (moveleft && jump) {
                 g.drawImage(ic6, x, y, null);
 
-            } else if (jump && moveright ) {
+            } else if (jump && moveright) {
                 g.drawImage(ic7, x, y, null);
 
             } else if (down && moveright) {
@@ -151,21 +151,20 @@ public class Label extends JLabel {
             g.fillRect(0, 0, screenwight, screenhight);
 
 
-                if (lose ) {
-                    g.setColor(Color.BLUE);
-                    g.setFont(new Font("Zapata", Font.BOLD, 35));
-                    g.drawString("Gesamelte Dosen: " + Dosen, 120, 400);
+            if (lose) {
+                g.setColor(Color.BLUE);
+                g.setFont(new Font("Zapata", Font.BOLD, 35));
+                g.drawString("Gesamelte Dosen: " + Dosen, 120, 400);
 
 
-                    g.setColor(Color.red);
-                    g.setFont(new Font("Zapata", Font.BOLD, 50));
-                    g.drawString("Du hast Verloren", 100, 350);
+                g.setColor(Color.red);
+                g.setFont(new Font("Zapata", Font.BOLD, 50));
+                g.drawString("Du hast Verloren", 100, 350);
 
-                }
+            }
 
 
-
-        } else if (inHauptmeü || inOptionen || inLaden ) {
+        } else if (inHauptmeü || inOptionen || inLaden) {
 
             g.drawImage(ib3, 0, 0, null);
 

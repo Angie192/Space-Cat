@@ -4,14 +4,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class ActionHandler  implements ActionListener {
+public class ActionHandler implements ActionListener {
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btFortsetzen) {
 
-             ingame = true;
+            ingame = true;
             inPause = false;
             inLaden = false;
             inOptionen = false;
@@ -71,7 +71,7 @@ public class ActionHandler  implements ActionListener {
             btShtum.setVisible(false);
             btOptionenHaupt.setVisible(false);
 
-        } else if (e.getSource() == btHauptmeü ||inHauptmeü) {
+        } else if (e.getSource() == btHauptmeü || inHauptmeü) {
 
             inLaden = false;
             inOptionen = false;
@@ -110,7 +110,7 @@ public class ActionHandler  implements ActionListener {
 
                 jfl.requestFocus();
 
-            } else if (e.getSource() ==btOptionenHaupt) {
+            } else if (e.getSource() == btOptionenHaupt) {
 
                 ingame = false;
                 inPause = false;
@@ -126,8 +126,6 @@ public class ActionHandler  implements ActionListener {
                 btStart.setVisible(false);
                 btShtum.setVisible(true);
                 btOptionenHaupt.setVisible(false);
-
-
 
 
             } else if (e.getSource() == btBenden) {

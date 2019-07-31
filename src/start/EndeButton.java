@@ -6,8 +6,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 
-
-
 public class EndeButton {
 
     public EndeButton() {
@@ -31,13 +29,13 @@ public class EndeButton {
 
             public void mouseExited(MouseEvent e) {
 
-             btBenden.setBounds(300, 540, 140, 40);
+                btBenden.setBounds(300, 540, 140, 40);
 
             }
 
 
-         });
-         jfl.add(btBenden);
+        });
+        jfl.add(btBenden);
 
     }
 

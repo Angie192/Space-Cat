@@ -8,15 +8,13 @@ import java.io.File;
 import java.io.IOException;
 
 
-
-
 public class Config {
 
 
     public Config() {
         try {
 
-         Image ib1, ib2, ib3, ic1, ic2, ic3, ic4, ic5 ,ic6, ic7, ic8, ic9, ic10, ig1, ig1tot, im1;
+            Image ib1, ib2, ib3, ic1, ic2, ic3, ic4, ic5, ic6, ic7, ic8, ic9, ic10, ig1, ig1tot, im1;
 
 
             //Backgreund

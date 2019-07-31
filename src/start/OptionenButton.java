@@ -6,10 +6,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 
-
 public class OptionenButton {
 
-    public OptionenButton(){
+    public OptionenButton() {
 
 
         //Optione
