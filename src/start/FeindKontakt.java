@@ -4,19 +4,15 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class FeindKontakt extends AbstractTimeHandler implements handel {
+public class FeindKontakt extends AbstractTimeHandler {
 
 
     private int temp = 0, temp1 = 0;
 
-      public FeindKontakt() {
+      public FeindKontakt() { super(0,15);}
 
 
-                timer.scheduleAtFixedRate(new TimerTask() {
-                    @Override
-                    public void run() {
-
-                        void handel() {
+                       protected void handle() {
 
 
                             if (ingame) {
@@ -102,10 +98,7 @@ public class FeindKontakt extends AbstractTimeHandler implements handel {
 
             }
 
-        }, 0, 15);
 
-    }
 
-}
 
 

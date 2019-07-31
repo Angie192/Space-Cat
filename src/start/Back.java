@@ -7,15 +7,10 @@ import java.util.TimerTask;
 public class Back extends AbstractTimeHandler {
 
 
-    public Back() {
+    public Back() { super(0,100);}
 
 
-        timer.scheduleAtFixedRate(new TimerTask() {
-
-            @Override
-            public void run() {
-
-                void handel() {
+                protected void handle() {
 
                     if (ingame) {
 
@@ -32,6 +27,3 @@ public class Back extends AbstractTimeHandler {
                     }
                 }
             }
-        }, 0, backgroundspeed);
-    }
-}

@@ -1,28 +1,14 @@
 package start;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
-
-
 
 public class Verloren  extends AbstractTimeHandler{
 
 
     private int temp = 0, temp1 = 0, temp2 = 0;
 
-          public Verloren() {
+    public Verloren() { super(0, 15);}
 
-
-
-                timer.scheduleAtFixedRate(new TimerTask() {
-
-
-                    @Override
-                    public void run() {
-
-
-                        void handel() {
+          protected void handle() {
 
                             if (lose) {
 
@@ -88,10 +74,12 @@ public class Verloren  extends AbstractTimeHandler{
                             }
                         }
 
-                    }
-                }, 0, 15);
+
     }
 
-}
+
+
+
+
 
 

@@ -7,14 +7,12 @@ import java.util.TimerTask;
 public class CatMove extends AbstractTimeHandler {
 
 
-        public CatMove() {
+        public CatMove() { super(0,10);}
 
 
-            timer.scheduleAtFixedRate(new TimerTask() {
 
-                public void run() {
 
-                    void handel() {
+                  protected void handle() {
 
                         if (ingame) {
 
@@ -50,9 +48,4 @@ public class CatMove extends AbstractTimeHandler {
                         }
                     }
                 }
-            }, 0, 10);
 
-        }
-
-
-}

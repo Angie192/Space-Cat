@@ -12,7 +12,7 @@ public class FeindMove extends AbstractTimeHandler{
     private int temp = 0;
 
 
-        public FeindMove() {
+        public FeindMove() { super(0,30);}
 
                 for (int i = 0; i <= 3; i++) {
                     feindx[i] = 80 + temp;
@@ -22,12 +22,7 @@ public class FeindMove extends AbstractTimeHandler{
 
                 }
 
-                timer.scheduleAtFixedRate(new TimerTask() {
-
-                    @Override
-                    public void run() {
-
-                        void handel() {
+                        protected void handle() {
 
                             if (ingame) {
 
@@ -54,7 +49,6 @@ public class FeindMove extends AbstractTimeHandler{
                             }
                         }
                     }
-            }, 0, 30);
-        }
 
-}
+
+

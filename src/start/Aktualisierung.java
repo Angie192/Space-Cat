@@ -5,7 +5,7 @@ public class Aktualisierung extends AbstractTimeHandler {
     private int tempAktualisirung = 0;
 
     public Aktualisierung() {
-      super(0, 50);
+      super(0, 15);
     }
      
     protected void handle() {

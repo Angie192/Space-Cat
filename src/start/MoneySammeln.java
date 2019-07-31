@@ -5,33 +5,29 @@ import java.util.TimerTask;
 
 
 
-public class MoneySammeln extends AbstractTimeHandler implements handel{
+public class MoneySammeln extends AbstractTimeHandler{
 
    public MoneySammeln() {
+       super(0, 10);
+   }
 
-       timer.scheduleAtFixedRate(new TimerTask() {
+       protected void handle() {
 
-            public void run() {
+           if (ingame) {
 
-                void handel() {
+               for (int i = 0; i <= 6; i++) {
 
-                    if (ingame) {
+                   if (x >= monyX[i] - 75 && x <= monyX[i] + 75 && y >= monyY[i] - 50 && y <= monyY[i] + 50) {
 
-                        for (int i = 0; i <= 6; i++) {
+                       Dosen += 1;
+                       monyY[i] = -1590;
 
-                            if (x >= monyX[i] - 75 && x <= monyX[i] + 75 && y >= monyY[i] - 50 && y <= monyY[i] + 50) {
+                   }
+               }
+           }
+       }
 
-                                Dosen += 1;
-                                monyY[i] = -1590;
+   }
 
-                            }
-                        }
-                    }
-                }
 
-            }
 
-            }, 0, 10);
-
-    }
-}
