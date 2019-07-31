@@ -12,9 +12,7 @@ public class Aktualisierung extends AbstractTimeHandler{
 
     public Aktualisierung() {
 
-        akktualisirung = new Timer();
-
-        akktualisirung.scheduleAtFixedRate(new TimerTask() {
+        timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
 

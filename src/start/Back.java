@@ -9,8 +9,8 @@ public class Back extends AbstractTimeHandler {
 
     public Back() {
 
-        background = new Timer();
-        background.scheduleAtFixedRate(new TimerTask() {
+
+        timer.scheduleAtFixedRate(new TimerTask() {
 
             @Override
             public void run() {
