@@ -1,7 +1,7 @@
 package start.time;
 
 
-public static class AktualisierungTimeHandler extends AbstractTimeHandler {
+public class AktualisierungTimeHandler extends AbstractTimeHandler {
 
     private int tempAktualisirung = 0;
 
