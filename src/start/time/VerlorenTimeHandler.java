@@ -76,34 +76,7 @@ public class VerlorenTimeHandler extends AbstractTimeHandler {
     }
 
 
-    public static class Aktualisierung extends BackTimeHandler.AbstractTimeHandler {
 
-        private int tempAktualisirung = 0;
-
-        public Aktualisierung() {
-            super(0, 15);
-        }
-
-        protected void handle() {
-            if (inPause) {
-                if (tempAktualisirung == 0) {
-
-                    btFortsetzen.requestFocus();
-                    btNeuStard.requestFocus();
-                    btOptionen.requestFocus();
-                    btHauptmeü.requestFocus();
-                    tempAktualisirung++;
-
-                } else if (tempAktualisirung == 1) {
-
-                    fenster.requestFocus();
-
-                }
-
-            }
-        }
-
-    }
 }
 
 
