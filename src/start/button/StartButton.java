@@ -8,7 +8,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 
-public class StartButton {
+public class StartButton extends AbstractButton {
 
     public StartButton() {
 

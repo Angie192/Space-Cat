@@ -8,7 +8,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 
-public class OptionenButton {
+public class OptionenButton extends AbstractButton {
 
     public OptionenButton() {
 
