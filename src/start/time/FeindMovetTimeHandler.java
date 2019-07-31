@@ -1,11 +1,11 @@
 package start.time;
 
-public class FeindMove extends AbstractTimeHandler {
+public class FeindMovetTimeHandler extends AbstractTimeHandler {
 
     private int temp = 0;
 
 
-    public FeindMove() {
+    public FeindMovetTimeHandler() {
         super(0, 30);
     }
 

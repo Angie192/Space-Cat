@@ -1,9 +1,9 @@
 package start.time;
 
-public class CatMove extends AbstractTimeHandler {
+public class CatMoveTimeHandler extends AbstractTimeHandler {
 
 
-    public CatMove() {
+    public CatMoveTimeHandler() {
         super(0, 10);
     }
 

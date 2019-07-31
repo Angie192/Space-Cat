@@ -1,10 +1,10 @@
 package start.time;
 
 
-public class Back extends AbstractTimeHandler {
+public class BackTimeHandler extends AbstractTimeHandler {
 
 
-    public Back() {
+    public BackTimeHandler() {
         super(0, 100);
     }
 

@@ -1,11 +1,11 @@
 package start.time;
 
-public class FeindKontakt extends AbstractTimeHandler {
+public class FeindKontaktTimeHandler extends AbstractTimeHandler {
 
 
     private int temp = 0, temp1 = 0;
 
-    public FeindKontakt() {
+    public FeindKontaktTimeHandler() {
         super(0, 15);
     }
 

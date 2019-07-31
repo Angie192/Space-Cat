@@ -1,4 +1,4 @@
-package start.buttons;
+package start.button;
 
 import start.ActionHandler;
 

@@ -1,10 +1,10 @@
 package start.time;
 
-class Moneymove extends AbstractTimeHandler {
+class MoneymoveTimeHandler extends AbstractTimeHandler {
 
     private int temp = 0;
 
-    public Moneymove() {
+    public MoneymoveTimeHandler() {
         super(0, 200);
     }
 

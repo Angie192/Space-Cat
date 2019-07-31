@@ -1,8 +1,8 @@
 package start.time;
 
-public class MoneySammeln extends AbstractTimeHandler {
+public class MoneySammelnTimeHandler extends AbstractTimeHandler {
 
-    public MoneySammeln() {
+    public MoneySammelnTimeHandler() {
         super(0, 10);
     }
 

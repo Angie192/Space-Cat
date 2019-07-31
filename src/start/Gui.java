@@ -1,6 +1,6 @@
 package start;
 
-import start.buttons.*;
+import start.button.*;
 import start.time.*;
 
 import javax.swing.*;
@@ -12,15 +12,15 @@ public class Gui extends JFrame {
     public Gui(final Config config) {
 
 
-        new Back();
-        new CatMove();
-        new FeindMove();
-        new FeindKontakt();
-        new MoneySammeln();
-        new Verloren();
+        new BackTimeHandler();
+        new CatMoveTimeHandler();
+        new FeindMovetTimeHandler();
+        new FeindKontaktTimeHandler();
+        new MoneySammelnTimeHandler();
+        new VerlorenTimeHandler();
 
 
-        new Verloren.Aktualisierung();
+        new VerlorenTimeHandler.Aktualisierung();
         new FortsetzenButton();
         new EndeButton();
         new HaupmeüButton();

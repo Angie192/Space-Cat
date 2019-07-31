@@ -1,11 +1,11 @@
 package start.time;
 
-public class Verloren extends AbstractTimeHandler {
+public class VerlorenTimeHandler extends AbstractTimeHandler {
 
 
     private int temp = 0, temp1 = 0, temp2 = 0;
 
-    public Verloren() {
+    public VerlorenTimeHandler() {
         super(0, 15);
     }
 
@@ -76,7 +76,7 @@ public class Verloren extends AbstractTimeHandler {
     }
 
 
-    public static class Aktualisierung extends Back.AbstractTimeHandler {
+    public static class Aktualisierung extends BackTimeHandler.AbstractTimeHandler {
 
         private int tempAktualisirung = 0;
 
