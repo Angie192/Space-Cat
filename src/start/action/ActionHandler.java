@@ -1,4 +1,6 @@
-package start;
+package start.action;
+
+import start.Key;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

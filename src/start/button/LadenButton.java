@@ -1,9 +1,7 @@
 package start.button;
 
-import start.ActionHandler;
+import start.action.ActionHandler;
 
-import javax.swing.*;
-import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
