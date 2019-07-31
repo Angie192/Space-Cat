@@ -1,43 +1,30 @@
 package start;
 
-import java.util.Timer;
-import java.util.TimerTask;
+public class Aktualisierung extends AbstractTimeHandler {
 
-
-public class Aktualisierung extends AbstractTimeHandler{
-
-
-
-     int tempAktualisirung = 0;
+    private int tempAktualisirung = 0;
 
     public Aktualisierung() {
+      super(0, 50);
+    }
+     
+    protected abstract void handle() {
+     if (inPause) {
+              if (tempAktualisirung == 0) {
 
-        timer.scheduleAtFixedRate(new TimerTask() {
-            @Override
-            public void run() {
+                  btFortsetzen.requestFocus();
+                  btNeuStard.requestFocus();
+                  btOptionen.requestFocus();
+                  btHauptmeü.requestFocus();
+                  tempAktualisirung++;
 
-                void handel() {
+              } else if (tempAktualisirung == 1) {
 
-                    if (inPause) {
+                  fenster.requestFocus();
 
-                        if (tempAktualisirung == 0) {
+              }
 
-                            btFortsetzen.requestFocus();
-                            btNeuStard.requestFocus();
-                            btOptionen.requestFocus();
-                            btHauptmeü.requestFocus();
-                            tempAktualisirung++;
-
-                        } else if (tempAktualisirung == 1) {
-
-                            fenster.requestFocus();
-
-                        }
-                    }
-
-                }
-            }
-        }, 0, 50);
+      }
     }
 
 }
