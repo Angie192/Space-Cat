@@ -1,10 +1,7 @@
 package start;
 
-import java.util.Timer;
-import java.util.TimerTask;
 
-
-public class CatMove extends AbstractTimeHandler {
+public class CatMove extends Back.AbstractTimeHandler {
 
 
     public CatMove() {

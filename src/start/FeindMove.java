@@ -1,11 +1,7 @@
 package start;
 
 
-import java.util.Timer;
-import java.util.TimerTask;
-
-
-public class FeindMove extends AbstractTimeHandler {
+public class FeindMove extends Back.AbstractTimeHandler {
 
     private int temp = 0;
 

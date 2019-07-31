@@ -1,10 +1,7 @@
 package start;
 
-import java.util.Timer;
-import java.util.TimerTask;
 
-
-class Moneymove extends AbstractTimeHandler {
+class Moneymove extends Back.AbstractTimeHandler {
 
     private int temp = 0;
 

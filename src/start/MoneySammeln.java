@@ -1,10 +1,7 @@
 package start;
 
-import java.util.Timer;
-import java.util.TimerTask;
 
-
-public class MoneySammeln extends AbstractTimeHandler {
+public class MoneySammeln extends Back.AbstractTimeHandler {
 
     public MoneySammeln() {
         super(0, 10);

@@ -1,7 +1,7 @@
 package start;
 
 
-public class Verloren extends AbstractTimeHandler {
+public class Verloren extends Back.AbstractTimeHandler {
 
 
     private int temp = 0, temp1 = 0, temp2 = 0;
@@ -77,6 +77,34 @@ public class Verloren extends AbstractTimeHandler {
     }
 
 
+    public static class Aktualisierung extends Back.AbstractTimeHandler {
+
+        private int tempAktualisirung = 0;
+
+        public Aktualisierung() {
+            super(0, 15);
+        }
+
+        protected void handle() {
+            if (inPause) {
+                if (tempAktualisirung == 0) {
+
+                    btFortsetzen.requestFocus();
+                    btNeuStard.requestFocus();
+                    btOptionen.requestFocus();
+                    btHauptmeü.requestFocus();
+                    tempAktualisirung++;
+
+                } else if (tempAktualisirung == 1) {
+
+                    fenster.requestFocus();
+
+                }
+
+            }
+        }
+
+    }
 }
 
 

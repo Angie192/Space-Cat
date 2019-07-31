@@ -1,10 +1,7 @@
 package start;
 
-import java.util.Timer;
-import java.util.TimerTask;
 
-
-public class FeindKontakt extends AbstractTimeHandler {
+public class FeindKontakt extends Back.AbstractTimeHandler {
 
 
     private int temp = 0, temp1 = 0;

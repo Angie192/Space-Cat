@@ -2,7 +2,6 @@ package start;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyEvent;
 
 
 public class Gui extends JFrame {
@@ -18,7 +17,7 @@ public class Gui extends JFrame {
         new Verloren();
 
 
-        new Aktualisierung();
+        new Verloren.Aktualisierung();
         new FortsetzenButton();
         new EndeButton();
         new HaupmeüButton();
