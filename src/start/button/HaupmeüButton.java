@@ -13,15 +13,13 @@ public class HaupmeüButton extends AbstractButton {
 
     public HaupmeüButton() {
 
+        super();
+
         //Hauptmeü
 
         setText("Hauptmeü");
         setBounds(300, 540, 140, 40);
-        setVisible(false);
         addActionListener(new ActionHandler());
-        setBackground(Color.gray);
-        setFont(new Font("Arial", Font.PLAIN, 35));
-        setForeground(Color.ORANGE);
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
