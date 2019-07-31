@@ -1,6 +1,7 @@
 package start;
 
 import java.util.Timer;
+import java.util.TimerTask;
 
 public  abstract class AbstractTimeHandler {
 
@@ -12,7 +13,7 @@ public  abstract class AbstractTimeHandler {
 
             @Override
             public void run() {
-              this.handle();
+              handle();
             }
 
             }, delary, period);
