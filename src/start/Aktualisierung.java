@@ -8,7 +8,7 @@ public class Aktualisierung extends AbstractTimeHandler {
       super(0, 50);
     }
      
-    protected abstract void handle() {
+    protected void handle() {
      if (inPause) {
               if (tempAktualisirung == 0) {
 
