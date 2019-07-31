@@ -13,16 +13,13 @@ public class FortsetzenButton extends AbstractButton {
 
     public FortsetzenButton() {
 
+        super();
 
         //Fortsetzen
 
         setText("Fortsetzen");
         setBounds(300, 300, 140, 40);
-        setVisible(false);
         addActionListener(new ActionHandler());
-        setBackground(Color.gray);
-        setFont(new Font("Arial", Font.PLAIN, 35));
-        setForeground(Color.ORANGE);
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {

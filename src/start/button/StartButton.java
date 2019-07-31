@@ -12,15 +12,13 @@ public class StartButton extends AbstractButton {
 
     public StartButton() {
 
+        super();
+
         // Stard positin noch nicht angepast
 
         setText("Stard");
         setBounds(300, 540, 140, 40);
-        setVisible(false);
         addActionListener(new ActionHandler());
-        setBackground(Color.gray);
-        setFont(new Font("Arial", Font.PLAIN, 35));
-        setForeground(Color.ORANGE);
         addMouseListener(new MouseAdapter() {
 
             @Override

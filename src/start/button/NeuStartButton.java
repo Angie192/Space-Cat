@@ -13,15 +13,13 @@ public class NeuStartButton extends AbstractButton {
 
     public NeuStartButton() {
 
+        super();
+
         //Neu Stard
 
         setText("Neu Stard");
         setBounds(300, 380, 140, 40);
-        setVisible(false);
         addActionListener(new ActionHandler());
-        setBackground(Color.gray);
-        setFont(new Font("Arial", Font.PLAIN, 35));
-        setForeground(Color.ORANGE);
         addMouseListener(new MouseAdapter() {
 
             @Override

@@ -12,15 +12,13 @@ public class LadenButton extends AbstractButton {
 
     public LadenButton() {
 
+        super();
+
         // Laden positin noch nicht angepast
 
         setText("Laden");
         setBounds(300, 540, 140, 40);
-        setVisible(false);
         addActionListener(new ActionHandler());
-        setBackground(Color.gray);
-        setFont(new Font("Arial", Font.PLAIN, 35));
-        setForeground(Color.ORANGE);
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {

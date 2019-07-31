@@ -12,16 +12,13 @@ public class OptionenButton extends AbstractButton {
 
     public OptionenButton() {
 
+        super();
 
         //Optione
 
         setText("Optionen");
         setBounds(300, 460, 140, 40);
-        setVisible(false);
         addActionListener(new ActionHandler());
-        setBackground(Color.gray);
-        setFont(new Font("Arial", Font.PLAIN, 35));
-        setForeground(Color.ORANGE);
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
