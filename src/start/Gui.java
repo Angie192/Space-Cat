@@ -18,9 +18,9 @@ public class Gui extends JFrame {
         new FeindKontaktTimeHandler();
         new MoneySammelnTimeHandler();
         new VerlorenTimeHandler();
+        new AktualisierungTimeHandler();
 
 
-        new VerlorenTimeHandler.Aktualisierung();
         new FortsetzenButton();
         new EndeButton();
         new HaupmeüButton();
