@@ -4,8 +4,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class Back{
-    Timer background;
+public class Back extends AbstractTimeHandler {
+
 
     public Back() {
 

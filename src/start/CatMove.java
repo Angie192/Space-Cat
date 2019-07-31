@@ -4,11 +4,11 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class CatMove {
+public class CatMove extends AbstractTimeHandler {
 
-    Timer catmove;
 
         public CatMove() {
+
             catmove = new Timer();
             catmove.scheduleAtFixedRate(new TimerTask() {
 

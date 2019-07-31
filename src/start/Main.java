@@ -9,15 +9,8 @@ public abstract class Main {
 
         final Config config = new Config();
 
-
-
-        }
-
-
         new Gui(config);
 
-
-
-}
+    }
 
 }

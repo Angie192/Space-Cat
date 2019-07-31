@@ -4,15 +4,15 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class FeindKontakt {
+public class FeindKontakt extends AbstractTimeHandler {
 
-    private Timer Fkontakt;
-    private int temp = 0, temp1 = 0, temp2 = 0, temp3 = 0;
+
+    private int temp = 0, temp1 = 0;
 
       public FeindKontakt() {
 
-                Fkontakt = new Timer();
-                Fkontakt.scheduleAtFixedRate(new TimerTask() {
+                fkontackt = new Timer();
+                fkontackt.scheduleAtFixedRate(new TimerTask() {
                     @Override
                     public void run() {
 

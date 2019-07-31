@@ -6,12 +6,11 @@ import java.util.TimerTask;
 
 
 
-class Moneymove {
+class Moneymove extends AbstractTimeHandler{
 
-    private Timer Monymove;
     private int temp = 0;
 
-        private Moneymove() {
+        public Moneymove() {
 
             for (int u = 0; u <= 6; u++) {
                 monyX[u] = 40 + temp;
@@ -20,8 +19,8 @@ class Moneymove {
                 temp += 100;
 
             }
-                Monymove = new Timer();
-                Monymove.scheduleAtFixedRate(new TimerTask() {
+                monyMove = new Timer();
+                monyMove.scheduleAtFixedRate(new TimerTask() {
 
                     @Override
                     public void run() {

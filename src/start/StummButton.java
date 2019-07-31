@@ -6,9 +6,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 
-public class SthumButton {
+public class StummButton {
 
-    public SthumButton() {
+    public StummButton() {
 
         // stum positin noch nicht angepast
         btShtum = new JButton();

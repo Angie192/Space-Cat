@@ -7,9 +7,8 @@ import java.util.TimerTask;
 
 
 
-public class FeindMove {
+public class FeindMove extends AbstractTimeHandler{
 
-    Timer gmove;
     private int temp = 0;
 
 

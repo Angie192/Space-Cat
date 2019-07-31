@@ -6,16 +6,15 @@ import java.util.TimerTask;
 
 
 
-public class Verloren {
+public class Verloren  extends AbstractTimeHandler{
 
-
-    private Timer verloren;
 
     private int temp = 0, temp1 = 0, temp2 = 0;
 
-          private Verloren() {
+          public Verloren() {
 
-                verloren= new Timer();
+
+                verloren = new Timer();
                 verloren.scheduleAtFixedRate(new TimerTask() {
 
                     @Override

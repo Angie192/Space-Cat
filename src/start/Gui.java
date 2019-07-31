@@ -20,7 +20,7 @@ public class Gui extends JFrame{
 
 
         new Aktualisierung();
-        new fortsetzenButton();
+        new FortsetzenButton();
         new EndeButton();
         new HaupmeüButton();
         new LadenButton();
@@ -28,34 +28,22 @@ public class Gui extends JFrame{
         new OptionenButton();
         new OptionenHauptButton();
         new StartButton();
-        new SthumButton();
+        new StummButton();
 
         Label label1;
+        JFrame fenster = new JFrame();
 
-
-        new JFrame();
-
-        setSize(800, 1000);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
-        setLayout((LayoutManager) null);
-        setTitle("SpaceCat");
-        setResizable(false);
+        fenster.setSize(800, 1000);
+        fenster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        fenster.setVisible(true);
+        fenster.setLayout((LayoutManager) null);
+        fenster.setTitle("SpaceCat");
+        fenster.setResizable(false);
         requestFocus();
         label1 = new Label();
         label1.setBounds(0, 0, 800, 1000);
         label1.setVisible(true);
-        add(label1);
-        addKeyListener(new Key() {
-            @Override
-            public void keyTyped(KeyEvent e) {
-
-            }
-        });
-
-
-
-
+        fenster.add(label1);
+        fenster.addKeyListener(new Key());
     }
-
 }

@@ -4,18 +4,17 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class Aktualisierung {
+public class Aktualisierung extends AbstractTimeHandler{
 
-    Timer Aktualisirung;
 
 
      int tempAktualisirung = 0;
 
     public Aktualisierung() {
 
-        Aktualisirung = new Timer();
+        akktualisirung = new Timer();
 
-        Aktualisirung.scheduleAtFixedRate(new TimerTask() {
+        akktualisirung.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
 
@@ -31,7 +30,7 @@ public class Aktualisierung {
 
                     } else if (tempAktualisirung == 1) {
 
-                       jfl.requestFocus();
+                       fenster.requestFocus();
 
                     }
                 }

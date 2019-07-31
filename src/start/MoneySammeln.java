@@ -5,13 +5,13 @@ import java.util.TimerTask;
 
 
 
-public class MoneySammeln {
+public class MoneySammeln extends AbstractTimeHandler{
 
-   private Timer Msameln;
-   private MoneySammeln() {
+   public MoneySammeln() {
 
-        Msameln = new Timer();
-        Msameln.scheduleAtFixedRate(new TimerTask() {
+
+       msammeln = new Timer();
+       msammeln.scheduleAtFixedRate(new TimerTask() {
 
             public void run() {
 
