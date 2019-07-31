@@ -1,4 +1,6 @@
-package start;
+package start.buttons;
+
+import start.ActionHandler;
 
 import javax.swing.*;
 import java.awt.*;
