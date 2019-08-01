@@ -8,7 +8,7 @@ public class AktualisierungTimeHandler extends AbstractTimeHandler {
     private int tempAktualisirung = 0;
 
     public AktualisierungTimeHandler(final Config config) {
-        super(0, 15);
+        super(0, 15, config);
 
     }
 

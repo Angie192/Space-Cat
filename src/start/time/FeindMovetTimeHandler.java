@@ -8,7 +8,7 @@ public class FeindMovetTimeHandler extends AbstractTimeHandler {
 
 
     public FeindMovetTimeHandler(final Config config) {
-        super(0, 30);
+        super(0, 30, config);
     }
 
     for(

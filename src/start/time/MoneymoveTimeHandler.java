@@ -7,7 +7,7 @@ class MoneymoveTimeHandler extends AbstractTimeHandler {
     private int temp = 0;
 
     public MoneymoveTimeHandler(final Config config) {
-        super(0, 200);
+        super(0, 200, config);
     }
 
             for(

@@ -5,7 +5,7 @@ import start.Config;
 public class MoneySammelnTimeHandler extends AbstractTimeHandler {
 
     public MoneySammelnTimeHandler(final Config config) {
-        super(0, 10);
+        super(0, 10,config);
     }
 
     protected void handle() {

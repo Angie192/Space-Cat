@@ -5,7 +5,7 @@ import java.awt.*;
 
 public abstract class AbstractButton extends JButton {
 
-    public AbstractButton( ){
+    public AbstractButton() {
 
         setBackground(Color.gray);
         setVisible(false);
@@ -14,4 +14,6 @@ public abstract class AbstractButton extends JButton {
 
     }
 
+
 }
+

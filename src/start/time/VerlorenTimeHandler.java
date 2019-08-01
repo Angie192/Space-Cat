@@ -8,7 +8,7 @@ public class VerlorenTimeHandler extends AbstractTimeHandler {
     private int temp = 0, temp1 = 0, temp2 = 0;
 
     public VerlorenTimeHandler(final Config config) {
-        super(0, 15);
+        super(0, 15,config);
     }
 
     protected void handle() {

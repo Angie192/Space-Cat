@@ -6,7 +6,7 @@ public class CatMoveTimeHandler extends AbstractTimeHandler {
 
 
     public CatMoveTimeHandler(final Config config) {
-        super(0, 10);
+        super(0, 10, config);
     }
 
 

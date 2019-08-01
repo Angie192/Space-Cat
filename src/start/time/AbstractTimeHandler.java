@@ -8,9 +8,8 @@ import java.util.TimerTask;
 public abstract class AbstractTimeHandler {
 
     protected Timer timer;
-    protected Config config;
 
-    AbstractTimeHandler(int delary, int period) {
+    AbstractTimeHandler(int delary, int period, Config config) {
         timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
 
@@ -20,9 +19,9 @@ public abstract class AbstractTimeHandler {
             }
 
         }, delary, period);
+        config = new Config();
     }
 
     protected abstract void handle();
 
 }
-   // die config aus Gui bei allen TimeHandler mittels Konstruktor übergeben und in AbstractTimeHandler als Attribute speichern

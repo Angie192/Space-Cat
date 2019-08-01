@@ -7,7 +7,7 @@ public class BackTimeHandler extends AbstractTimeHandler {
 
 
     public BackTimeHandler(final Config config) {
-        super(0, 100);
+        super(0, 100, config);
     }
 
 

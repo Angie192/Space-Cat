@@ -8,7 +8,7 @@ public class FeindKontaktTimeHandler extends AbstractTimeHandler {
     private int temp = 0, temp1 = 0;
 
     public FeindKontaktTimeHandler(final Config config) {
-        super(0, 15);
+        super(0, 15, config);
     }
 
 
