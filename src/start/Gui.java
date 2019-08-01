@@ -12,14 +12,13 @@ public class Gui extends JFrame {
     public Gui(final Config config) {
 
 
-        new BackTimeHandler();
-        new CatMoveTimeHandler();
-        new FeindMovetTimeHandler();
-        new FeindKontaktTimeHandler();
-        new MoneySammelnTimeHandler();
-        new VerlorenTimeHandler();
-        new AktualisierungTimeHandler();
-
+        new BackTimeHandler(config);
+        new CatMoveTimeHandler(config);
+        new FeindMovetTimeHandler(config);
+        new FeindKontaktTimeHandler(config);
+        new MoneySammelnTimeHandler(config);
+        new VerlorenTimeHandler(config);
+        new AktualisierungTimeHandler(config);
 
         new FortsetzenButton();
         new EndeButton();
@@ -30,6 +29,7 @@ public class Gui extends JFrame {
         new OptionenHauptButton();
         new StartButton();
         new StummButton();
+
 
         Label label1;
 

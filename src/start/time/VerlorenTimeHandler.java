@@ -1,11 +1,13 @@
 package start.time;
 
+import start.Config;
+
 public class VerlorenTimeHandler extends AbstractTimeHandler {
 
 
     private int temp = 0, temp1 = 0, temp2 = 0;
 
-    public VerlorenTimeHandler() {
+    public VerlorenTimeHandler(final Config config) {
         super(0, 15);
     }
 

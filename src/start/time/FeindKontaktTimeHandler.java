@@ -1,11 +1,13 @@
 package start.time;
 
+import start.Config;
+
 public class FeindKontaktTimeHandler extends AbstractTimeHandler {
 
 
     private int temp = 0, temp1 = 0;
 
-    public FeindKontaktTimeHandler() {
+    public FeindKontaktTimeHandler(final Config config) {
         super(0, 15);
     }
 

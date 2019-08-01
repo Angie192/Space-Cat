@@ -1,10 +1,12 @@
 package start.time;
 
 
+import start.Config;
+
 public class BackTimeHandler extends AbstractTimeHandler {
 
 
-    public BackTimeHandler() {
+    public BackTimeHandler(final Config config) {
         super(0, 100);
     }
 

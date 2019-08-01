@@ -1,8 +1,10 @@
 package start.time;
 
+import start.Config;
+
 public class MoneySammelnTimeHandler extends AbstractTimeHandler {
 
-    public MoneySammelnTimeHandler() {
+    public MoneySammelnTimeHandler(final Config config) {
         super(0, 10);
     }
 

@@ -1,9 +1,11 @@
 package start.time;
 
+import start.Config;
+
 public class CatMoveTimeHandler extends AbstractTimeHandler {
 
 
-    public CatMoveTimeHandler() {
+    public CatMoveTimeHandler(final Config config) {
         super(0, 10);
     }
 

@@ -1,11 +1,13 @@
 package start.time;
 
+import start.Config;
+
 public class FeindMovetTimeHandler extends AbstractTimeHandler {
 
     private int temp = 0;
 
 
-    public FeindMovetTimeHandler() {
+    public FeindMovetTimeHandler(final Config config) {
         super(0, 30);
     }
 

@@ -1,15 +1,20 @@
 package start.time;
 
 
+import start.Config;
+
 public class AktualisierungTimeHandler extends AbstractTimeHandler {
 
     private int tempAktualisirung = 0;
 
-    public AktualisierungTimeHandler() {
+    public AktualisierungTimeHandler(final Config config) {
         super(0, 15);
+
     }
 
+
     protected void handle() {
+
         if (inPause) {
             if (tempAktualisirung == 0) {
 
@@ -27,5 +32,6 @@ public class AktualisierungTimeHandler extends AbstractTimeHandler {
 
         }
     }
+
 
 }
