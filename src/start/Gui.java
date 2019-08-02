@@ -9,6 +9,8 @@ import java.awt.*;
 
 public class Gui extends JFrame {
 
+    public JButton btFortsetzen, btBenden, btNeuStart, btHauptmenü, btLaden, btOptionen, btHauptOptionen, btStart, btStumm;
+
     public Gui(final Config config) {
 
 
@@ -20,16 +22,15 @@ public class Gui extends JFrame {
         new VerlorenTimeHandler(config);
         new AktualisierungTimeHandler(config);
 
-       FortsetzenButton btFortsetzen = new FortsetzenButton();
-       EndeButton btBenden = new EndeButton();
-       HaupmeüButton btHauptmenü = new HaupmeüButton();
-       LadenButton btLaden = new LadenButton();
-       NeuStartButton btNeuStart = new NeuStartButton();
-       OptionenButton btOptionen = new OptionenButton();
-       OptionenHauptButton btHauptOptionen = new OptionenHauptButton();
-       StartButton btStart = new StartButton();
-       StummButton btStumm = new StummButton();
-
+        btFortsetzen = new FortsetzenButton();
+        btBenden = new EndeButton();
+        btHauptmenü = new HaupmeüButton();
+        btLaden = new LadenButton();
+        btNeuStart = new NeuStartButton();
+        btOptionen = new OptionenButton();
+        btHauptOptionen = new OptionenHauptButton();
+        btStart = new StartButton();
+        btStumm = new StummButton();
 
 
         Label label1;
@@ -48,7 +49,7 @@ public class Gui extends JFrame {
         addKeyListener(new Key());
     }
 
-    public void ButtonE() {
+    public void buttonE() {
 
 
         if (e.getSource() == btStart) {
@@ -57,23 +58,23 @@ public class Gui extends JFrame {
             inPause = false;
             inLaden = false;
             inOptionen = false;
-            inHauptmeü = false;
-            btHauptmeü.setVisible(false);
+            inHauptmenü = false;
+            btHauptmenü.setVisible(false);
             btOptionen.setVisible(false);
-            btNeuStard.setVisible(false);
+            btNeuStart.setVisible(false);
             btFortsetzen.setVisible(false);
             btBenden.setVisible(false);
             btLaden.setVisible(false);
             btStart.setVisible(false);
-            btShtum.setVisible(false);
-            btOptionenHaupt.setVisible(false);
+            btStumm.setVisible(false);
+            btHauptOptionen.setVisible(false);
 
             tempAktualisirung = 0;
             Key.tempKeyhandler = 0;
 
 
-    }
+        }
 
-}
+    }
 
 }
