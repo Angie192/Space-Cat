@@ -20,15 +20,16 @@ public class Gui extends JFrame {
         new VerlorenTimeHandler(config);
         new AktualisierungTimeHandler(config);
 
-        new FortsetzenButton();
-        new EndeButton();
-        new HaupmeüButton();
-        new LadenButton();
-        new NeuStartButton();
-        new OptionenButton();
-        new OptionenHauptButton();
-        new StartButton();
-        new StummButton();
+       FortsetzenButton btFortsetzen = new FortsetzenButton();
+       EndeButton btBenden = new EndeButton();
+       HaupmeüButton btHauptmenü = new HaupmeüButton();
+       LadenButton btLaden = new LadenButton();
+       NeuStartButton btNeuStart = new NeuStartButton();
+       OptionenButton btOptionen = new OptionenButton();
+       OptionenHauptButton btHauptOptionen = new OptionenHauptButton();
+       StartButton btStart = new StartButton();
+       StummButton btStumm = new StummButton();
+
 
 
         Label label1;
@@ -47,7 +48,7 @@ public class Gui extends JFrame {
         addKeyListener(new Key());
     }
 
-    public Gui() {
+    public void ButtonE() {
 
 
         if (e.getSource() == btStart) {
@@ -72,5 +73,7 @@ public class Gui extends JFrame {
 
 
     }
+
+}
 
 }

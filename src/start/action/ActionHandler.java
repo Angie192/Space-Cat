@@ -1,5 +1,6 @@
 package start.action;
 
+import start.Gui;
 import start.Key;
 
 import java.awt.event.ActionEvent;
@@ -7,6 +8,7 @@ import java.awt.event.ActionListener;
 
 
 public class ActionHandler implements ActionListener {
+
 
 
     @Override
@@ -18,7 +20,7 @@ public class ActionHandler implements ActionListener {
             inLaden = false;
             inOptionen = false;
             inHauptmeü = false;
-            btHauptmeü.setVisible(false);
+            btHauptmenü.setVisible(false);
             btOptionen.setVisible(false);
             btNeuStard.setVisible(false);
             btFortsetzen.setVisible(false);
