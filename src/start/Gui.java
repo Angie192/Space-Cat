@@ -9,7 +9,15 @@ import java.awt.*;
 
 public class Gui extends JFrame {
 
-    public JButton btFortsetzen, btBenden, btNeuStart, btHauptmenü, btLaden, btOptionen, btHauptOptionen, btStart, btStumm;
+    private JButton btFortsetzen;
+    private JButton btBenden;
+    private JButton btNeuStart;
+    private JButton btHauptmenü;
+    private JButton btLaden;
+    private JButton btOptionen;
+    private JButton btHauptOptionen;
+    private JButton btStart;
+    private JButton btStumm;
 
     public Gui(final Config config) {
 
@@ -49,7 +57,7 @@ public class Gui extends JFrame {
         addKeyListener(new Key());
     }
 
-    public void buttonE() {
+    public void updateUi() {
 
 
         if (e.getSource() == btStart) {
