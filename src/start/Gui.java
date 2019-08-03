@@ -30,7 +30,8 @@ public class Gui extends JFrame {
         new VerlorenTimeHandler(config);
         new AktualisierungTimeHandler(config);
 
-        btFortsetzen = new FortsetzenButton();
+        // TODO die aktuelle Gui Referenz bei den Buttons reingeben
+        btFortsetzen = new FortsetzenButton(this, EnumButton.FortsetzenBT);
         btBenden = new EndeButton();
         btHauptmenü = new HaupmeüButton();
         btLaden = new LadenButton();
@@ -57,11 +58,14 @@ public class Gui extends JFrame {
         addKeyListener(new Key());
     }
 
-    public void updateUi() {
+    public void updateUi(/* TODO EnumButton übergeben*/) {
 
+        // TODO ui in ausgangszustand versetzen
 
-        if (e.getSource() == btStart) {
+        if (e.getSource() == btStart) { // TODO konkrete EnumButton abfragen für den jeweiligen Button
+            // TODO abweichung vom ausgangszustand umsetzen
 
+            // TODO ingame, inPause, inLaden, inOptionen, inHauptmenu als enum umsetzen
             ingame = true;
             inPause = false;
             inLaden = false;

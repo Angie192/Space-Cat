@@ -1,5 +1,7 @@
 package start.button;
 
+import start.EnumButton;
+import start.Gui;
 import start.action.ActionHandler;
 
 import java.awt.event.MouseAdapter;
@@ -9,7 +11,7 @@ import java.awt.event.MouseEvent;
 public class FortsetzenButton extends AbstractButton {
 
 
-    public FortsetzenButton() {
+    public FortsetzenButton(final Gui gui, final EnumButton enumButton) {
 
         super();
 
@@ -17,7 +19,7 @@ public class FortsetzenButton extends AbstractButton {
 
         setText("Fortsetzen");
         setBounds(300, 300, 140, 40);
-        addActionListener(new ActionHandler());
+        addActionListener(new ActionHandler(gui, enumButton));
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
@@ -37,7 +39,5 @@ public class FortsetzenButton extends AbstractButton {
 
 
     }
-
-
 }
 
