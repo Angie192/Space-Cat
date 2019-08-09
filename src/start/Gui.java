@@ -30,16 +30,16 @@ public class Gui extends JFrame {
         new VerlorenTimeHandler(config);
         new AktualisierungTimeHandler(config);
 
-        // TODO die aktuelle Gui Referenz bei den Buttons reingeben
-        btFortsetzen = new FortsetzenButton(this, EnumButton.FortsetzenBT);
-        btBenden = new EndeButton();
-        btHauptmenü = new HaupmeüButton();
-        btLaden = new LadenButton();
-        btNeuStart = new NeuStartButton();
-        btOptionen = new OptionenButton();
-        btHauptOptionen = new OptionenHauptButton();
-        btStart = new StartButton();
-        btStumm = new StummButton();
+
+        btFortsetzen = new FortsetzenButton(this, EnumButton.FortsetzenNBT);
+        btBenden = new EndeButton(this, EnumButton.EndeNBT);
+        btHauptmenü = new HaupmeüButton(this, EnumButton.HauptmenüNBT);
+        btLaden = new LadenButton(this,EnumButton.LadenNBT);
+        btNeuStart = new NeuStartButton(this, EnumButton.NeuStartNBT);
+        btOptionen = new OptionenButton(this, EnumButton.OptionenNBT);
+        btHauptOptionen = new OptionenHauptButton(this, EnumButton.OptionenHauptNBT);
+        btStart = new StartButton(this, EnumButton.StartNBT);
+        btStumm = new StummButton(this, EnumButton.StartNBT);
 
 
         Label label1;
@@ -58,14 +58,13 @@ public class Gui extends JFrame {
         addKeyListener(new Key());
     }
 
-    public void updateUi(/* TODO EnumButton übergeben*/) {
+    public void updateUi(EnumButton) {
 
         // TODO ui in ausgangszustand versetzen
 
-        if (e.getSource() == btStart) { // TODO konkrete EnumButton abfragen für den jeweiligen Button
+        if () { // TODO konkrete EnumButton abfragen für den jeweiligen Button
             // TODO abweichung vom ausgangszustand umsetzen
 
-            // TODO ingame, inPause, inLaden, inOptionen, inHauptmenu als enum umsetzen
             ingame = true;
             inPause = false;
             inLaden = false;

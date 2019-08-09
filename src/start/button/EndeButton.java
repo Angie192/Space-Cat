@@ -1,5 +1,7 @@
 package start.button;
 
+import start.EnumButton;
+import start.Gui;
 import start.action.ActionHandler;
 
 import java.awt.event.MouseAdapter;
@@ -8,7 +10,7 @@ import java.awt.event.MouseEvent;
 
 public class EndeButton extends AbstractButton {
 
-    public EndeButton() {
+    public EndeButton(final Gui gui, final EnumButton enumButton) {
 
         super();
 
@@ -16,7 +18,7 @@ public class EndeButton extends AbstractButton {
 
         setText("Beenden");
         setBounds(300, 540, 140, 40);
-        addActionListener(new ActionHandler());
+        addActionListener(new ActionHandler(gui,enumButton));
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {

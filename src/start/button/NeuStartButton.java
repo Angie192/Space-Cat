@@ -1,5 +1,7 @@
 package start.button;
 
+import start.EnumButton;
+import start.Gui;
 import start.action.ActionHandler;
 
 import java.awt.event.MouseAdapter;
@@ -9,7 +11,7 @@ import java.awt.event.MouseEvent;
 public class NeuStartButton extends AbstractButton {
 
 
-    public NeuStartButton() {
+    public NeuStartButton(final Gui gui, final EnumButton enumButton) {
 
         super();
 
@@ -17,7 +19,7 @@ public class NeuStartButton extends AbstractButton {
 
         setText("Neu Stard");
         setBounds(300, 380, 140, 40);
-        addActionListener(new ActionHandler());
+        addActionListener(new ActionHandler(gui, enumButton));
         addMouseListener(new MouseAdapter() {
 
             @Override

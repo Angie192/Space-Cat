@@ -22,5 +22,17 @@ public enum EnumButton {
     StartBT,
     StartNBT,
     StummBT,
-    StummNBT;
+    StummNBT,
+    inGameBT,
+    inGameNBT,
+    inHauptmenüBT,
+    inHaupmenüNBT,
+    inLandenBT,
+    inLandenNBT,
+    inOptionenBT,
+    inOptionenNBT,
+    inpauseBT,
+    inpauseNBT;
+
 }
+
