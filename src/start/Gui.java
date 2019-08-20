@@ -43,6 +43,7 @@ public class Gui extends JFrame {
 
 
         Label label1;
+        EnumButton eButton;
 
         setSize(800, 1000);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -60,7 +61,7 @@ public class Gui extends JFrame {
 
     public void updateUi(EnumButton) {
 
-        EnumButton eButton;
+
 
         inGameBT = true;
         inGameNBT = false;
