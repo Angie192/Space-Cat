@@ -60,6 +60,7 @@ public class Gui extends JFrame {
 
     public void updateUi(EnumButton) {
 
+        EnumButton eButton;
 
         inGameBT = true;
         inGameNBT = false;
@@ -84,7 +85,7 @@ public class Gui extends JFrame {
         tempAktualisirung = 0;
         Key.tempKeyhandler = 0;
 
-
+        // Pause
         if (inGameNBT == true && inpauseBT == true) {
 
 
@@ -99,7 +100,27 @@ public class Gui extends JFrame {
 
         }
 
+        //Optionen
+        if (inOptionenBT == true && inGameNBT == true) {
 
+            btStumm.setVisible(true);
+
+        }
+
+        //Landen
+        if (inLadenBT == true && inGameNBT == true) {
+
+        }
+
+
+        // Hauptmenüe
+        if (inHauptmenüBT == true && inGameNBT == true) {
+
+            btHauptOptionen.setVisible(true);
+            btStart.setVisible(true);
+            btLaden.setVisible(true);
+            btBenden.setVisible(true);
+
+        }
     }
-
 }
