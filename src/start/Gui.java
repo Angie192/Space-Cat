@@ -34,7 +34,7 @@ public class Gui extends JFrame {
         btFortsetzen = new FortsetzenButton(this, EnumButton.FortsetzenNBT);
         btBenden = new EndeButton(this, EnumButton.EndeNBT);
         btHauptmenü = new HaupmeüButton(this, EnumButton.HauptmenüNBT);
-        btLaden = new LadenButton(this,EnumButton.LadenNBT);
+        btLaden = new LadenButton(this, EnumButton.LadenNBT);
         btNeuStart = new NeuStartButton(this, EnumButton.NeuStartNBT);
         btOptionen = new OptionenButton(this, EnumButton.OptionenNBT);
         btHauptOptionen = new OptionenHauptButton(this, EnumButton.OptionenHauptNBT);
@@ -60,31 +60,45 @@ public class Gui extends JFrame {
 
     public void updateUi(EnumButton) {
 
-        // TODO ui in ausgangszustand versetzen
 
-        if () { // TODO konkrete EnumButton abfragen für den jeweiligen Button
-            // TODO abweichung vom ausgangszustand umsetzen
+        inGameBT = true;
+        inGameNBT = false;
+        inHauptmenüBT = false;
+        inHaupmenüNBT = true;
+        inLandenBT = false;
+        inLandenNBT = true;
+        inOptionenBT = false;
+        inOptionenNBT = true;
+        inpauseBT = false;
+        inpauseNBT = true;
+        btHauptmenü.setVisible(false);
+        btOptionen.setVisible(false);
+        btNeuStart.setVisible(false);
+        btFortsetzen.setVisible(false);
+        btBenden.setVisible(false);
+        btLaden.setVisible(false);
+        btStart.setVisible(false);
+        btStumm.setVisible(false);
+        btHauptOptionen.setVisible(false);
 
-            ingame = true;
-            inPause = false;
-            inLaden = false;
-            inOptionen = false;
-            inHauptmenü = false;
-            btHauptmenü.setVisible(false);
-            btOptionen.setVisible(false);
-            btNeuStart.setVisible(false);
-            btFortsetzen.setVisible(false);
-            btBenden.setVisible(false);
-            btLaden.setVisible(false);
-            btStart.setVisible(false);
-            btStumm.setVisible(false);
-            btHauptOptionen.setVisible(false);
+        tempAktualisirung = 0;
+        Key.tempKeyhandler = 0;
+
+
+        if (inGameNBT == true && inpauseBT == true) {
+
+
+            btHauptmenü.setVisible(true);
+            btOptionen.setVisible(true);
+            btNeuStart.setVisible(true);
+            btFortsetzen.setVisible(true);
 
             tempAktualisirung = 0;
             Key.tempKeyhandler = 0;
 
 
         }
+
 
     }
 
